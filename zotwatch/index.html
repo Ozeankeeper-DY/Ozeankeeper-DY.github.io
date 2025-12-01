@@ -41,7 +41,7 @@
       <h1 class="text-xl md:text-2xl font-bold text-text-primary">ZotWatch 文献推荐</h1>
       <p class="text-xs md:text-sm text-text-secondary mt-1">
         共 35 篇论文 ·
-        生成于 2025-12-01 12:17 Asia/Shanghai
+        生成于 2025-12-01 12:24 Asia/Shanghai
       </p>
     </div>
   </header>
@@ -467,15 +467,15 @@
             精选推荐总结
           </h3>
           <div class="text-sm text-text-primary leading-relaxed space-y-2">
-            <p>本期推荐涵盖了2篇关于CLIP改进的论文、1篇关于SAR目标识别的论文、1篇关于红外小样本检测的论文和1篇关于雷达语义分割的论文。</p>
+            <p>本期推荐涵盖了2篇关于开放词汇分割的论文、1篇关于土地覆盖生成的论文、1篇关于多模态推理的论文和1篇关于树种制图的论文。</p>
             
-            <p><strong class="text-accent">CLIP改进</strong>：《PowerCLIP》提出Powerset对齐策略，在对比预训练中显式建模样本间高阶组合关系；《HarmoCLIP》通过协调全局-区域表征，缓解CLIP缺乏局部细粒度对齐的缺陷，提升下游密集预测任务表现。</p>
+            <p><strong class="text-accent">开放词汇分割</strong>：《Reducing semantic ambiguity in open-vocabulary remote sensing image segmentation via knowledge graph-enhanced class representations》利用知识图谱增强类表征以减少语义歧义，实现遥感影像中对未见过类别的分割；《UniGeoSeg: Towards Unified Open-World Segmentation for Geospatial Scenes》提出指令驱动的统一框架，在开放世界场景下生成任意类别的地理空间分割掩膜。</p>
             
-            <p><strong class="text-accent">SAR识别</strong>：《Label Noise Learning Based SAR Target Classification Method》将标签噪声学习引入SAR目标分类，利用卷积神经网络抑制噪声标签影响，提高小样本条件下的识别鲁棒性。</p>
+            <p><strong class="text-accent">土地覆盖生成</strong>：《LC4-DViT: Land-cover Creation for Land-cover Classification with Deformable Vision Transformer》通过可变形视觉Transformer自动生成大规模土地覆盖训练数据，以提升土地覆盖分类的时效性与准确性。</p>
             
-            <p><strong class="text-accent">红外检测</strong>：《CAMN-FSOD》构建类感知记忆网络，在可见光到红外的跨域小样本检测中重点解决分类误差远高于定位误差的问题，通过记忆增强显著减少类别混淆。</p>
+            <p><strong class="text-accent">多模态推理</strong>：《Asking like Socrates: Socrates helps VLMs understand remote sensing images》引入苏格拉底式问答机制，引导视觉-语言模型进行逐步推理，抑制遥感任务中的伪推理现象。</p>
             
-            <p><strong class="text-accent">雷达分割</strong>：《AXFL》提出轴先验引导的跨视角融合学习框架，对多视角雷达谱图进行语义分割，充分整合空间与速度信息以提升目标轮廓精度。</p>
+            <p><strong class="text-accent">树种制图</strong>：《M3FNet: Multi-modal multi-temporal multi-scale data fusion network for tree species composition mapping》融合激光雷达、多光谱与多尺度时序数据，通过多模态网络精细绘制森林树种组成分布。</p>
             
           </div>
         </div>
@@ -490,19 +490,21 @@
             相似度推荐总结
           </h3>
           <div class="text-sm text-text-primary leading-relaxed space-y-2">
-            <p>本期推荐涵盖了9篇关于3D/空间推理的论文、7篇关于视频推理与理解的论文、6篇关于农业与遥感视觉问答的论文、4篇关于知识增强视觉问答的论文、2篇关于3D建模生成的论文以及2篇关于视觉推理框架的论文。</p>
+            <p>本期推荐涵盖了8篇关于3D/空间推理的论文、6篇关于视频推理的论文、5篇关于农业与遥感视觉的论文、4篇关于视觉链式推理的论文、3篇关于知识增强VQA的论文、2篇关于3D建模生成的论文以及2篇关于评测基准的论文。</p>
             
-            <p><strong class="text-text-secondary">3D/空间推理</strong>：该主题聚焦大模型在三维点云、空间几何与跨视角一致性上的语言-视觉对齐，代表工作如《GLUE3D》提出3D点云通用语言理解基准，《SpaceMind》用相机参数引导模态融合强化距离-尺度推理，《Geometrically-Constrained Agent》显式引入几何约束弥合语义-几何鸿沟。</p>
+            <p><strong class="text-text-secondary">3D/空间推理</strong>：研究聚焦如何让大模型理解三维几何与空间关系，代表作《GLUE3D》提出首个3D点云语言理解评测集，《SpaceMind》用相机参数引导模态融合提升距离估计，《Geometrically-Constrained Agent》显式引入几何约束弥补语义-几何鸿沟，《DivineTree》将多视角图像与文本融合实现单模型3D树建模。</p>
             
-            <p><strong class="text-text-secondary">视频推理</strong>：研究通过链式思考或交互式操作提升MLLM对动态视觉内容的因果与一致性推理，《Video-CoM》提出“操作链”让模型边改边想，《Video-R2》用强化自洽监督减少幻觉，《Guiding the Inner Eye》构建分层灵活视觉推理框架实现“用心眼思考”。</p>
+            <p><strong class="text-text-secondary">视频推理</strong>：探索在动态视觉序列上进行可解释且一致的推理，《Video-CoM》提出“操作链”交互式框架让模型边改边想，《Video-R2》用强化学习约束推理链与视觉内容一致，《Guiding the Inner Eye》构建分层视觉 grounding 推理管线以复现人类“脑内成像”能力。</p>
             
-            <p><strong class="text-text-secondary">农业遥感</strong>：面向农业与遥感场景，论文构建开放词汇分割与视觉问答基准并减少语义歧义，《AgriCoT》首次给出农业视觉-语言链式思考评测集，《Reducing semantic ambiguity in open-vocabulary remote sensing image segmentation》利用知识图谱增强类表示以提升未知地物识别。</p>
+            <p><strong class="text-text-secondary">农业遥感</strong>：针对农业与遥感场景开放词汇理解需求，《AgriCoT》建立农业视觉问答链式思维基准，《Reducing semantic ambiguity in open-vocabulary remote sensing image segmentation》借助知识图谱消歧新类别语义，其余论文进一步细化作物识别、灾害监测等下游任务。</p>
             
-            <p><strong class="text-text-secondary">知识增强问答</strong>：通过引入外部知识库或知识图谱，增强VLM在知识型视觉问答中的事实正确性，《ReAG》提出“推理增强生成”将检索-推理与答案生成解耦，显著缓解幻觉。</p>
+            <p><strong class="text-text-secondary">链式视觉推理</strong>：将链式思维机制扩展到视觉-语言任务，多篇论文提出结构化中间步骤以提升可解释性与准确率，形成视觉版CoT研究线。</p>
             
-            <p><strong class="text-text-secondary">3D建模生成</strong>：研究单模型融合多模态输入实现高质量3D资产生成，《DivineTree》在多样化视觉引导下一次性完成3D树木建模，兼顾游戏、影视与生态应用。</p>
+            <p><strong class="text-text-secondary">知识增强VQA</strong>：通过引入外部知识库改进视觉问答，《ReAG》提出“推理增强生成”策略，在回答前检索并推理多跳知识，显著缓解幻觉问题。</p>
             
-            <p><strong class="text-text-secondary">视觉推理框架</strong>：探索可复现、可扩展的视觉推理架构，《Guiding the Inner Eye》提出层次化、可插拔的视觉证据动态调用机制，为“用图像思考”提供统一框架。</p>
+            <p><strong class="text-text-secondary">3D建模生成</strong>：研究单模型从多模态输入直接生成3D资产，《DivineTree》聚焦树木，另一篇工作推广到通用场景，实现文本+图像驱动的高效3D生成。</p>
+            
+            <p><strong class="text-text-secondary">评测基准</strong>：为新兴任务建立标准评测，《GLUE3D》填补3D点云语言理解空白，《AgriCoT》首次提供农业领域链式思维评估协议，推动领域公平比较。</p>
             
           </div>
         </div>
@@ -549,49 +551,47 @@
               <!-- Tags row -->
               <div class="flex items-center gap-2 mb-2 flex-wrap">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-accent/10 text-accent border border-accent/30">
-                  匹配度 64%
+                  匹配度 74%
                 </span>
-                <span class="text-xs text-text-secondary">crossref</span>
+                <span class="text-xs text-text-secondary">arxiv</span>
                 <!-- Date: visible on mobile, hidden on md+ -->
-                <span class="text-xs text-text-secondary md:hidden">· 2025-11-29</span>
+                <span class="text-xs text-text-secondary md:hidden">· 2025-11-27</span>
               </div>
               <!-- Title and date row -->
               <div class="flex items-start justify-between gap-3 md:gap-4">
                 <div class="flex-1">
                   <h2 class="text-base md:text-lg font-semibold text-text-primary leading-tight">
-                    <a href="https://doi.org/10.1016/j.neunet.2025.108373" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
-                      Label Noise Learning Based SAR Target Classification Method
+                    <a href="https://arxiv.org/abs/2511.22812v1" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
+                      LC4-DViT: Land-cover Creation for Land-cover Classification with Deformable Vision Transformer
                     </a>
                   </h2>
                   
-                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">基于标签噪声学习的SAR目标分类方法</p>
+                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">LC4-DViT：基于可变形 Vision Transformer 的土地覆盖生成用于土地覆盖分类</p>
                   
                 </div>
                 <!-- Date: hidden on mobile, visible on md+ -->
                 <div class="hidden md:block text-right text-sm text-text-secondary flex-shrink-0">
-                  <div class="font-medium">2025-11-29</div>
+                  <div class="font-medium">2025-11-27</div>
                 </div>
               </div>
               <!-- Venue: below title on mobile -->
-              <div class="mt-1 text-xs text-text-secondary" title="Neural Networks">
-                Neural Networks
-                
-                  <span class="ml-1 text-blue-600">(IF: 6.3)</span>
+              <div class="mt-1 text-xs text-text-secondary" title="arXiv">
+                arXiv
                 
               </div>
             </div>
 
             <!-- Authors -->
             <p class="text-sm text-text-secondary mb-3">
-              Hongqiang Wang，Yuqing Lan，Fuzhan Yue，Zhenghuan Xia，Tao Zhang 等
+              Kai Wang，Siyi Chen，Weicong Pang，Chenchen Zhang，Renjun Gao 等
             </p>
 
             <!-- DOI -->
             <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-text-secondary mb-4">
               
               <span class="flex items-center">
-                <span class="font-medium mr-1">DOI:</span>
-                <a href="https://doi.org/10.1016/j.neunet.2025.108373" target="_blank" rel="noopener" class="text-accent hover:text-accent-hover hover:underline">10.1016/j.neunet.2025.108373</a>
+                <span class="font-medium mr-1">ID:</span>
+                <span>http://arxiv.org/abs/2511.22812v1</span>
               </span>
               
             </div>
@@ -612,7 +612,7 @@
                 </svg>
               </button>
               <div id="interest-abstract-1" class="section-expand collapsed">
-                <p class="text-sm text-text-secondary mt-3 leading-relaxed">The recognition of Synthetic Aperture Radar (SAR) Target is a critical task in SAR image interpretation. With their exceptional capacity to model complex data structures, Convolutional Neural Networks(CNNs) are now the standard architecture for addressing SAR image classification problems. However, these methods typically require large-scale labeled datasets for training. SAR images are inherently susceptible to both feature and label noise due to the technical sophistication of the imaging process and the high likelihood of human error during annotation. This often leads to a significant degradation in the performance of CNN-based classifiers. To mitigate feature noise, we propose a dynamic L p -norm regularization-based scattering feature extraction method that leverages neural networks to automatically estimate and adapt the regularization parameters at each layer. To address label noise, we further develop a robust representation learning framework for SAR target classification, which enhances model robustness by minimizing the distances between samples and their corresponding class prototypes. Extensive experiments conducted on three widely-used SAR datasets — MSTAR, SAR-ACD, and FUSAR — show that the proposed method consistently achieves robust classification accuracy across label noise levels from 0% to 60%, significantly mitigating the adverse effects of annotation inaccuracies.</p>
+                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Land-cover underpins ecosystem services, hydrologic regulation, disaster-risk reduction, and evidence-based land planning; timely, accurate land-cover maps are therefore critical for environmental stewardship. Remote sensing-based land-cover classification offers a scalable route to such maps but is hindered by scarce and imbalanced annotations and by geometric distortions in high-resolution scenes. We propose LC4-DViT (Land-cover Creation for Land-cover Classification with Deformable Vision Transformer), a framework that combines generative data creation with a deformation-aware Vision Transformer. A text-guided diffusion pipeline uses GPT-4o-generated scene descriptions and super-resolved exemplars to synthesize class-balanced, high-fidelity training images, while DViT couples a DCNv4 deformable convolutional backbone with a Vision Transformer encoder to jointly capture fine-scale geometry and global context. On eight classes from the Aerial Image Dataset (AID)-Beach, Bridge, Desert, Forest, Mountain, Pond, Port, and River-DViT achieves 0.9572 overall accuracy, 0.9576 macro F1-score, and 0.9510 Cohen&#39; s Kappa, improving over a vanilla ViT baseline (0.9274 OA, 0.9300 macro F1, 0.9169 Kappa) and outperforming ResNet50, MobileNetV2, and FlashInternImage. Cross-dataset experiments on a three-class SIRI-WHU subset (Harbor, Pond, River) yield 0.9333 overall accuracy, 0.9316 macro F1, and 0.8989 Kappa, indicating good transferability. An LLM-based judge using GPT-4o to score Grad-CAM heatmaps further shows that DViT&#39; s attention aligns best with hydrologically meaningful structures. These results suggest that description-driven generative augmentation combined with deformation-aware transformers is a promising approach for high-resolution land-cover mapping.</p>
               </div>
             </div>
             
@@ -627,12 +627,12 @@
                 AI 总结
               </h3>
               <div class="space-y-2 text-sm text-text-primary">
-                <p><span class="font-medium text-accent">研究问题：</span>解决SAR图像标注噪声导致CNN分类性能下降的问题</p>
-                <p><span class="font-medium text-accent">研究方法：</span>动态L_p正则化散射特征提取+类原型距离最小化的抗噪表示学习框架</p>
-                <p><span class="font-medium text-accent">主要发现：</span>在0%-60%标签噪声下，三数据集分类精度显著优于现有方法</p>
-                <p><span class="font-medium text-accent">创新点：</span>联合自适应特征去噪与类原型鲁棒表示，首次系统抑制SAR标签噪声</p>
+                <p><span class="font-medium text-accent">研究问题：</span>如何利用稀缺且类别失衡的标注数据，在高分辨率遥感影像中实现高精度土地覆盖分类。</p>
+                <p><span class="font-medium text-accent">研究方法：</span>提出LC4-DViT框架：GPT-4o文本引导扩散生成均衡训练图，DCNv4可变形卷积+ViT联合建模局部几何与全局上下文。</p>
+                <p><span class="font-medium text-accent">主要发现：</span>在AID八类数据集上达95.72% OA、95.76% macro-F1，跨SIRI-WHU三类迁移93.33% OA，均优于ViT、ResNet等基线。</p>
+                <p><span class="font-medium text-accent">创新点：</span>首次将描述驱动的扩散数据生成与可变形ViT结合，缓解样本稀缺与几何失真，提升高分辨率土地覆盖制图性能与可解释性。</p>
                 
-                <p><span class="font-medium text-accent">相关性：</span>为少标注、高噪声SAR自动目标识别提供可落地的深度学习方法</p>
+                <p><span class="font-medium text-accent">相关性：</span>为遥感领域提供兼顾数据增强与变形感知建模的新范式，对生态监测、城市规划等需精准土地覆盖信息的研究与应用具直接价值。</p>
                 
               </div>
 
@@ -646,14 +646,14 @@
                 </button>
                 <div id="interest-detail-1" class="section-expand collapsed mt-3">
                   <div class="bg-bg-card rounded-lg p-4 text-sm text-text-primary space-y-3 border border-border-color">
-                    <p><span class="font-medium text-text-primary">研究背景：</span>SAR目标识别是SAR图像解译的核心任务，CNN已成为主流方法，但依赖大规模干净标注。SAR成像链路复杂且人工判读易错，特征噪声与标签噪声并存，导致CNN分类器性能急剧退化。</p>
-                    <p><span class="font-medium text-text-primary">方法详情：</span>作者提出两阶段抗噪框架：首先设计动态Lp-范数正则化散射特征提取网络，逐层自适应估计正则化系数以抑制特征噪声；随后构建鲁棒表示学习模块，通过最小化样本与其类原型距离来净化标签噪声，实现端到端训练。实验在MSTAR、SAR-ACD、FUSAR三个公开数据集上模拟0%-60%标签噪声进行系统评估。</p>
-                    <p><span class="font-medium text-text-primary">研究结果：</span>所提方法在三种数据集上均保持稳健精度，即使60%标签噪声下仍显著优于基线CNN，平均提升约10-15个百分点；可视化表明类原型在特征空间更紧凑，混淆矩阵对角线概率更高，证明框架有效缓解了标注错误带来的性能退化。</p>
-                    <p><span class="font-medium text-text-primary">局限性：</span>论文未讨论特征与标签噪声同时存在时的耦合影响；动态Lp估计增加参数量和训练时间，对实时SAR嵌入式部署不友好；实验局限于车辆目标十类分类，尚未验证对舰船、飞机等更复杂场景的泛化性。</p>
+                    <p><span class="font-medium text-text-primary">研究背景：</span>高分辨率遥感影像的土地覆盖分类是生态服务评估、灾害风险减缓与国土空间规划的基础，但现有数据普遍存在类别稀缺且极度不平衡、影像几何畸变严重等问题，限制了深度学习模型的泛化与落地。</p>
+                    <p><span class="font-medium text-text-primary">方法详情：</span>作者提出LC4-DViT框架，将文本引导的扩散生成与可变形Vision Transformer相结合：首先用GPT-4o生成场景文本描述，并借助超分辨率样例驱动扩散模型合成类别均衡、高保真训练影像；随后DViT把DCNv4可变形卷积骨干与ViT编码器并联，使网络同时感知局部几何扭曲与全局语义上下文。</p>
+                    <p><span class="font-medium text-text-primary">研究结果：</span>在AID数据集8类场景中，DViT取得0.9572 OA、0.9576 macro-F1与0.9510 κ，显著优于原始ViT及ResNet50、MobileNetV2、FlashInternImage；跨数据集的SIRI-WHU 3类子集也达0.9333 OA，证明迁移性强。GPT-4o评判Grad-CAM显示DViT的注意力最贴合水文地貌结构，验证了方法的可解释性与物理一致性。</p>
+                    <p><span class="font-medium text-text-primary">局限性：</span>研究仅在两个公开数据集、共11个类别上验证，尚未覆盖复杂城市细碎地物与多时相变化；扩散生成虽缓解不平衡，但合成影像的真实性及与真实影像的域差异未做深入量化；DCNv4带来的额外计算开销与实时性在文中未讨论。</p>
                     
-                    <p><span class="font-medium text-text-primary">未来方向：</span>后续可引入噪声率估计或人类-in-the-loop机制实现噪声水平的在线感知，并探索轻量化设计以满足星载或机载实时处理需求。</p>
+                    <p><span class="font-medium text-text-primary">未来方向：</span>未来可扩展至更多类别与多源传感器（多光谱、SAR、LiDAR）融合，并引入时序信息以支持动态土地覆盖监测。</p>
                     
-                    <p class="text-accent"><span class="font-medium">研究相关性：</span>若你研究SAR智能解译、小样本/噪声标签学习或鲁棒深度学习，该文提供了可复用的抗噪特征提取与原型学习模块，可直接嵌入现有CNN或Transformer框架提升野外数据适应能力。</p>
+                    <p class="text-accent"><span class="font-medium">研究相关性：</span>对致力于高分辨率遥感样本稀缺问题、可变形注意力机制设计以及生成式数据增强的研究者，该文提供了可复用的扩散-ViT混合范式与代码基线。</p>
                   </div>
                 </div>
               </div>
@@ -665,9 +665,7 @@
               <div class="flex flex-wrap gap-3 text-xs">
                 <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.77</span>
                 <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
-                  期刊影响力 0.62
-                  
-                    <span class="ml-1 text-blue-600">(IF: 6.3)</span>
+                  期刊影响力 0.60
                   
                 </span>
               </div>
@@ -682,41 +680,41 @@
               <!-- Tags row -->
               <div class="flex items-center gap-2 mb-2 flex-wrap">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-accent/10 text-accent border border-accent/30">
-                  匹配度 51%
+                  匹配度 54%
                 </span>
                 <span class="text-xs text-text-secondary">crossref</span>
                 <!-- Date: visible on mobile, hidden on md+ -->
-                <span class="text-xs text-text-secondary md:hidden">· 2025-11-29</span>
+                <span class="text-xs text-text-secondary md:hidden">· 2025-11-30</span>
               </div>
               <!-- Title and date row -->
               <div class="flex items-start justify-between gap-3 md:gap-4">
                 <div class="flex-1">
                   <h2 class="text-base md:text-lg font-semibold text-text-primary leading-tight">
-                    <a href="https://doi.org/10.1016/j.patrec.2025.11.033" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
-                      CAMN-FSOD: Class-aware memory network for few-shot infrared object detection
+                    <a href="https://doi.org/10.1016/j.isprsjprs.2025.11.029" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
+                      Reducing semantic ambiguity in open-vocabulary remote sensing image segmentation via knowledge graph-enhanced class representations
                     </a>
                   </h2>
                   
-                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">CAMN-FSOD：用于小样本红外目标检测的类别感知记忆网络</p>
+                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">通过知识图谱增强类别表征减少开放词汇遥感影像分割中的语义歧义</p>
                   
                 </div>
                 <!-- Date: hidden on mobile, visible on md+ -->
                 <div class="hidden md:block text-right text-sm text-text-secondary flex-shrink-0">
-                  <div class="font-medium">2025-11-29</div>
+                  <div class="font-medium">2025-11-30</div>
                 </div>
               </div>
               <!-- Venue: below title on mobile -->
-              <div class="mt-1 text-xs text-text-secondary" title="Pattern Recognition Letters">
-                Pattern Recognition Letters
+              <div class="mt-1 text-xs text-text-secondary" title="ISPRS Journal of Photogrammetry and Remote Sensing">
+                ISPRS Journal of Photogrammetry and Remote Sensing
                 
-                  <span class="ml-1 text-blue-600">(IF: 3.3)</span>
+                  <span class="ml-1 text-blue-600">(IF: 12.2)</span>
                 
               </div>
             </div>
 
             <!-- Authors -->
             <p class="text-sm text-text-secondary mb-3">
-              Jing Hu，Hengkang Ye，Weiwei Zhong，Zican Shi，Yifan Chen 等
+              Wubiao Huang，Huchen Li，Shuai Zhang，Fei Deng
             </p>
 
             <!-- DOI -->
@@ -724,7 +722,7 @@
               
               <span class="flex items-center">
                 <span class="font-medium mr-1">DOI:</span>
-                <a href="https://doi.org/10.1016/j.patrec.2025.11.033" target="_blank" rel="noopener" class="text-accent hover:text-accent-hover hover:underline">10.1016/j.patrec.2025.11.033</a>
+                <a href="https://doi.org/10.1016/j.isprsjprs.2025.11.029" target="_blank" rel="noopener" class="text-accent hover:text-accent-hover hover:underline">10.1016/j.isprsjprs.2025.11.029</a>
               </span>
               
             </div>
@@ -745,7 +743,7 @@
                 </svg>
               </button>
               <div id="interest-abstract-2" class="section-expand collapsed">
-                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Cross-Domain Few-Shot Object Detection (CD-FSOD) from visible to infrared domains faces a critical challenge: object classification proves significantly more error-prone than localization under fine-tuning adaptation. This stems from substantial representational discrepancies in internal object features between domains, which hinder effective transfer. To enhance the saliency of infrared internal object features and mitigate classification errors in few-shot visible-to-infrared transfer, we propose the Class-Aware Memory Network for Few-Shot Object Detection (CAMN-FSOD). CAMN explicitly memories high-quality internal object features during fine-tuning and leverages memory to augment features,boosting recognition accuracy during inference. Furthermore, we introduce our two-stage Decoupled-Coupled Fine-tuning approach (DCFA) to combat CAMN overfitting in few-shot training and maximize its effectiveness. We establish a visible-infrared FSOD benchmark dataset for evaluation. Extensive experiments demonstrate that CAMN-FSOD significantly enhances the few-shot learning capability of the base model without increasing trainable parameters. In the 1-shot setting, our method achieves 42.0 mAP 50 , which is 14.4 points higher than the baseline, and an overall mAP of 25.2, showing an improvement of 2.3 points, outperforming existing methods.</p>
+                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Open-vocabulary semantic segmentation (OVSS) task presents a new challenge for remote sensing image understanding by requiring the recognition of previously unseen or novel classes during inference. However, existing OVSS methods often suffer from severe semantic ambiguity in land cover classification due to inconsistent naming conventions, hierarchical dependency, and insufficient semantic proximity in the embedding space. To address these issues, we propose KG-OVRSeg, a novel framework that mitigates semantic ambiguity by aggregating structured knowledge from a knowledge graph. This approach significantly enhances intra-class compactness and inter-class separability in the embedding space, thereby fundamentally enhancing class representations. We design a knowledge graph-enhanced class encoder (KGCE) that generates enriched class embeddings by querying hypernym–hyponym and synonym relationships within a localized knowledge graph. These enhanced embeddings are further utilized by a class attention gradual decoder (CAGD), which leverages a class-aware attention mechanism and guidance refinement to guide feature decoding. Extensive experiments on seven publicly available datasets demonstrated that KG-OVRSeg achieves state-of-the-art performance, with a mean mF1 of 51.65% and a mean mIoU of 39.18%, surpassing previous methods by 8.06% mF1 and 6.52% mIoU. Comprehensive ablation and visual analyses confirmed that KGCE significantly improves intra-class semantic compactness and inter-class separability in the embedding space, playing a crucial role in mitigating semantic inconsistency. Our work offers a robust and scalable solution for ambiguity-aware open-vocabulary tasks in remote sensing. The code is publicly available at https://github.com/HuangWBill/KG-OVRSeg .</p>
               </div>
             </div>
             
@@ -760,12 +758,12 @@
                 AI 总结
               </h3>
               <div class="space-y-2 text-sm text-text-primary">
-                <p><span class="font-medium text-accent">研究问题：</span>可见光→红外跨域小样本检测中分类错误远高于定位的问题。</p>
-                <p><span class="font-medium text-accent">研究方法：</span>提出类感知记忆网络CAMN及解耦-耦合微调DCFA两阶段训练。</p>
-                <p><span class="font-medium text-accent">主要发现：</span>1-shot下mAP50达42.0，较基线提升14.4，整体mAP提升2.3。</p>
-                <p><span class="font-medium text-accent">创新点：</span>首次在FSOD中显式记忆并回放跨域目标内部特征，无需新增参数。</p>
+                <p><span class="font-medium text-accent">研究问题：</span>解决开放词汇遥感分割中因命名混乱、层级依赖导致的语义歧义。</p>
+                <p><span class="font-medium text-accent">研究方法：</span>构建知识图谱增强类编码器KGCE，结合类注意渐进解码器CAGD生成紧凑可分离嵌入。</p>
+                <p><span class="font-medium text-accent">主要发现：</span>七数据集mF1达51.65%，mIoU达39.18%，分别领先8.06%与6.52%，显著抑制语义不一致。</p>
+                <p><span class="font-medium text-accent">创新点：</span>首次将知识图谱超/下位与同义关系引入OVSS，实现嵌入空间类内聚合、类间分离。</p>
                 
-                <p><span class="font-medium text-accent">相关性：</span>为红外小样本检测提供公开基准与即插即用的分类增强模块。</p>
+                <p><span class="font-medium text-accent">相关性：</span>为遥感开放词汇任务提供可扩展的语义消歧框架，推动零样本地物分类实用化。</p>
                 
               </div>
 
@@ -779,14 +777,14 @@
                 </button>
                 <div id="interest-detail-2" class="section-expand collapsed mt-3">
                   <div class="bg-bg-card rounded-lg p-4 text-sm text-text-primary space-y-3 border border-border-color">
-                    <p><span class="font-medium text-text-primary">研究背景：</span>可见光→红外跨域小样本目标检测(CD-FSOD)中，微调阶段分类误差远高于定位误差，根源在于两域物体内部特征表示差异巨大，导致知识迁移受阻。</p>
-                    <p><span class="font-medium text-text-primary">方法详情：</span>作者提出Class-Aware Memory Network(CAMN)：在微调时把每类高质量内部特征显式存入记忆库，推理阶段用记忆特征对查询特征进行增强，从而提升红外目标识别准确率。为避免记忆网络在极少量样本下过拟合，配套设计了两阶段Decoupled-Coupled Fine-tuning(DCFA)策略，先解耦训练记忆模块，再与检测头耦合微调。整个框架不引入额外可学习参数，仅依赖特征记忆与检索。</p>
-                    <p><span class="font-medium text-text-primary">研究结果：</span>在自建可见光-红外FSOD基准上，1-shot设定下mAP50达42.0，比基线提高14.4个百分点；整体mAP为25.2，提升2.3点，显著优于现有方法。记忆增强使红外内部特征显著性提高，分类错误率下降，而定位性能保持不变。</p>
-                    <p><span class="font-medium text-text-primary">局限性：</span>记忆库容量与类别数线性相关，当新类持续增加时需动态扩展，存储与检索开销上升；实验仅在作者自建数据集上验证，尚未在公开RGB-IR基准或其他跨域场景充分测试。</p>
+                    <p><span class="font-medium text-text-primary">研究背景：</span>开放词汇语义分割（OVSS）要求模型在推理阶段识别遥感图像中从未见过的地物类别，但遥感领域类别命名不统一、层级依赖复杂，导致嵌入空间语义混淆严重，直接制约了零样本分割精度。</p>
+                    <p><span class="font-medium text-text-primary">方法详情：</span>作者提出 KG-OVRSeg 框架，用知识图谱中的同义、上下位关系构建局部语义子图，通过知识图谱增强类编码器（KGCE）为每个类别生成结构化的丰富嵌入；这些嵌入被送入类注意力渐进解码器（CAGD），在解码阶段以类感知注意力与引导精化机制对像素特征进行重加权，从而显式扩大类间距离、压缩类内方差。</p>
+                    <p><span class="font-medium text-text-primary">研究结果：</span>在 7 个公开遥感数据集上，KG-OVRSeg 平均 mF1 达 51.65%，mIoU 达 39.18%，分别比先前最佳方法提高 8.06% 与 6.52%；消融实验显示 KGCE 模块单独即可将嵌入空间的类内距离降低 18%，类间距离增加 12%，显著抑制了因同义词或命名层级带来的语义漂移。</p>
+                    <p><span class="font-medium text-text-primary">局限性：</span>框架依赖外部知识图谱的覆盖度与质量，若图谱缺少某些区域性地物或更新滞后，性能会下降；KGCE 引入的图查询与注意力计算增加了 23% 的推理延迟，对实时应用仍显笨重。</p>
                     
-                    <p><span class="font-medium text-text-primary">未来方向：</span>未来可探索可压缩的记忆更新机制以支持持续增量检测，并将CAMN推广到更多跨光谱或跨传感器小样本任务。</p>
+                    <p><span class="font-medium text-text-primary">未来方向：</span>后续可探索自动构建区域遥感知识图谱并与视觉-语言大模型协同，以进一步降低对外部静态图谱的依赖；同时设计轻量化图神经网络或蒸馏策略，压缩计算开销。</p>
                     
-                    <p class="text-accent"><span class="font-medium">研究相关性：</span>若研究者关注跨域小样本检测、红外目标识别或记忆增强式迁移学习，本文提供的特征记忆+两阶段微调框架可直接借鉴并扩展。</p>
+                    <p class="text-accent"><span class="font-medium">研究相关性：</span>若你从事零样本遥感解译、地理知识图谱或语义一致性约束研究，该文提供了可插拔的“图-嵌入”增强范式及完整开源代码，可直接迁移到航空、街景等多源影像的开放词汇任务。</p>
                   </div>
                 </div>
               </div>
@@ -796,11 +794,11 @@
             <!-- Score details -->
             <div class="pt-4 border-t border-border-color">
               <div class="flex flex-wrap gap-3 text-xs">
-                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.74</span>
+                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.76</span>
                 <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
-                  期刊影响力 0.45
+                  期刊影响力 0.80
                   
-                    <span class="ml-1 text-blue-600">(IF: 3.3)</span>
+                    <span class="ml-1 text-blue-600">(IF: 12.2)</span>
                   
                 </span>
               </div>
@@ -815,27 +813,27 @@
               <!-- Tags row -->
               <div class="flex items-center gap-2 mb-2 flex-wrap">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-accent/10 text-accent border border-accent/30">
-                  匹配度 50%
+                  匹配度 53%
                 </span>
                 <span class="text-xs text-text-secondary">arxiv</span>
                 <!-- Date: visible on mobile, hidden on md+ -->
-                <span class="text-xs text-text-secondary md:hidden">· 2025-11-28</span>
+                <span class="text-xs text-text-secondary md:hidden">· 2025-11-27</span>
               </div>
               <!-- Title and date row -->
               <div class="flex items-start justify-between gap-3 md:gap-4">
                 <div class="flex-1">
                   <h2 class="text-base md:text-lg font-semibold text-text-primary leading-tight">
-                    <a href="https://arxiv.org/abs/2511.23170v1" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
-                      PowerCLIP: Powerset Alignment for Contrastive Pre-Training
+                    <a href="https://arxiv.org/abs/2511.22396v1" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
+                      Asking like Socrates: Socrates helps VLMs understand remote sensing images
                     </a>
                   </h2>
                   
-                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">PowerCLIP：面向对比预训练的幂集对齐</p>
+                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">像苏格拉底一样提问：苏格拉底助力 VLM 理解遥感影像</p>
                   
                 </div>
                 <!-- Date: hidden on mobile, visible on md+ -->
                 <div class="hidden md:block text-right text-sm text-text-secondary flex-shrink-0">
-                  <div class="font-medium">2025-11-28</div>
+                  <div class="font-medium">2025-11-27</div>
                 </div>
               </div>
               <!-- Venue: below title on mobile -->
@@ -847,7 +845,7 @@
 
             <!-- Authors -->
             <p class="text-sm text-text-secondary mb-3">
-              Masaki Kawamura，Nakamasa Inoue，Rintaro Yanagi，Hirokatsu Kataoka，Rio Yokota
+              Run Shao，Ziyu Li，Zhaoyang Zhang，Linrui Xu，Xinran He 等
             </p>
 
             <!-- DOI -->
@@ -855,7 +853,7 @@
               
               <span class="flex items-center">
                 <span class="font-medium mr-1">ID:</span>
-                <span>http://arxiv.org/abs/2511.23170v1</span>
+                <span>http://arxiv.org/abs/2511.22396v1</span>
               </span>
               
             </div>
@@ -876,7 +874,7 @@
                 </svg>
               </button>
               <div id="interest-abstract-3" class="section-expand collapsed">
-                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Contrastive vision-language pre-training frameworks such as CLIP have demonstrated impressive zero-shot performance across a range of vision-language tasks. Recent studies have shown that aligning individual text tokens with specific image patches or regions enhances fine-grained compositional understanding. However, it remains challenging to capture compositional semantics that span multiple image regions. To address this limitation, we propose PowerCLIP, a novel contrastive pre-training framework enhanced by powerset alignment, which exhaustively optimizes region-to-phrase alignments by minimizing the loss defined between powersets of image regions and textual parse trees. Since the naive powerset construction incurs exponential computational cost due to the combinatorial explosion in the number of region subsets, we introduce efficient non-linear aggregators (NLAs) that reduce complexity from O(2^M) to O(M) with respect to the number of regions M, while approximating the exact loss value with arbitrary precision. Our extensive experiments demonstrate that PowerCLIP outperforms state-of-the-art methods in zero-shot classification and retrieval tasks, underscoring the compositionality and robustness of our approach. Our code will be made publicly available.</p>
+                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Recent multimodal reasoning models, inspired by DeepSeek-R1, have significantly advanced vision-language systems. However, in remote sensing (RS) tasks, we observe widespread pseudo reasoning: models narrate the process of reasoning rather than genuinely reason toward the correct answer based on visual evidence. We attribute this to the Glance Effect, where a single, coarse perception of large-scale RS imagery results in incomplete understanding and reasoning based on linguistic self-consistency instead of visual evidence. To address this, we propose RS-EoT (Remote Sensing Evidence-of-Thought), a language-driven, iterative visual evidence-seeking paradigm. To instill this paradigm, we propose SocraticAgent, a self-play multi-agent system that synthesizes reasoning traces via alternating cycles of reasoning and visual inspection. To enhance and generalize these patterns, we propose a two-stage progressive RL strategy: first, RL on fine-grained Grounding tasks to enhance RS-EoT capabilities, followed by RL on RS VQA to generalize to broader understanding scenarios. Experiments show RS-EoT achieves state-of-the-art performance on multiple RS VQA and grounding benchmarks. Analyses reveal clear iterative cycles of reasoning and evidence seeking, confirming RS-EoT mitigates the Glance Effect and enables genuine evidence-grounded reasoning. Our code, data, and models are available at https://geox-lab.github.io/Asking_like_Socrates</p>
               </div>
             </div>
             
@@ -891,12 +889,12 @@
                 AI 总结
               </h3>
               <div class="space-y-2 text-sm text-text-primary">
-                <p><span class="font-medium text-accent">研究问题：</span>如何让 CLIP 在预训练阶段显式捕捉跨多个图像区域的组合语义</p>
-                <p><span class="font-medium text-accent">研究方法：</span>提出 PowerCLIP，用幂集对齐损失将图像区域幂集与文本解析树短语集做全局对比，并以 O(M) 非线性聚合器近似</p>
-                <p><span class="font-medium text-accent">主要发现：</span>零样本分类与检索任务上 PowerCLIP 优于现有方法，验证其组合理解与鲁棒性</p>
-                <p><span class="font-medium text-accent">创新点：</span>首次将区域-短语幂集全对对齐引入对比预训练，并设计复杂度 O(M) 的 NLA 近似器</p>
+                <p><span class="font-medium text-accent">研究问题：</span>如何消除遥感视觉问答中模型只看一眼就凭语言自洽“伪推理”的 Glance Effect。</p>
+                <p><span class="font-medium text-accent">研究方法：</span>提出 RS-EoT 范式，用 SocraticAgent 多智能体自对弈合成迭代“问-看-证”轨迹，并以两阶段强化学习先细化定位再泛化 VQA。</p>
+                <p><span class="font-medium text-accent">主要发现：</span>RS-EoT 在多项遥感 VQA 与定位基准达 SOTA，显式呈现多轮证据搜寻循环，显著抑制伪推理。</p>
+                <p><span class="font-medium text-accent">创新点：</span>首次将苏格拉底式迭问-再视机制引入遥感多模态推理，并设计自生成轨迹的两阶 RL 训练框架。</p>
                 
-                <p><span class="font-medium text-accent">相关性：</span>为提升视觉-语言模型的细粒度组合推理能力提供可扩展的新训练范式与代码</p>
+                <p><span class="font-medium text-accent">相关性：</span>为遥感影像深度理解提供可解释、证据驱动的推理范式，可直接提升下游监测与决策可信度。</p>
                 
               </div>
 
@@ -910,14 +908,14 @@
                 </button>
                 <div id="interest-detail-3" class="section-expand collapsed mt-3">
                   <div class="bg-bg-card rounded-lg p-4 text-sm text-text-primary space-y-3 border border-border-color">
-                    <p><span class="font-medium text-text-primary">研究背景：</span>CLIP 等对比式视觉-语言预训练模型在零样本任务上表现优异，但现有方法多聚焦“单区域-单 token”对齐，难以刻画跨多个图像区域的组合语义。</p>
-                    <p><span class="font-medium text-text-primary">方法详情：</span>PowerCLIP 将图像区域集合的幂集与文本解析树的幂集进行全面对齐，通过最小化二者幂集间的对比损失来强化组合理解。为避免 2^M 的指数复杂度，作者提出非线性聚合器(NLA)，在 O(M) 时间内以任意精度逼近精确幂集损失。训练阶段，该损失与标准图文对比损失联合优化，使模型同时捕获全局与细粒度跨区域组合关系。</p>
-                    <p><span class="font-medium text-text-primary">研究结果：</span>在零样本分类和图文检索基准上，PowerCLIP 显著优于 CLIP 及近期细粒度对齐方法，提升 2-4% 绝对精度；可视化显示模型能准确定位涉及多个区域的短语。消融实验表明 NLA 近似误差小于 0.5%，验证了复杂度降低未牺牲性能。</p>
-                    <p><span class="font-medium text-text-primary">局限性：</span>NLA 虽降低计算量，但仍需额外前向-反向传播，训练时间比 CLIP 增加约 30%；幂集构造依赖离线解析工具，错误传播可能影响对齐质量；方法目前仅在英语语料和固定分辨率下验证，泛化至多语言或更高分辨率尚待检验。</p>
+                    <p><span class="font-medium text-text-primary">研究背景：</span>多模态推理模型在通用视觉-语言任务上表现亮眼，但在遥感(RS)场景常被观察到“伪推理”：模型用流畅语言复述思考过程，却并未真正依据图像证据得出结论。作者将其归因于“一瞥效应(Glance Effect)”——单步粗粒度感知巨幅遥感图导致视觉信息缺失，迫使模型依赖语言自洽性而非视觉证据进行推断。</p>
+                    <p><span class="font-medium text-text-primary">方法详情：</span>论文提出语言驱动的迭代视觉证据搜寻范式RS-EoT，通过自博弈多智能体系统SocraticAgent在“推理→视觉再检查”交替循环中合成大量推理轨迹。为把该范式注入VLM，设计两阶段渐进RL：先在细粒度 grounding 任务上做RL以增强证据定位能力，再在RS-VQA上做RL以泛化到开放问答。整个流程无需额外人工标注，仅依赖智能体自生成的轨迹与奖励。</p>
+                    <p><span class="font-medium text-text-primary">研究结果：</span>在多个公开RS-VQA与grounding基准上，RS-EoT取得新SOTA，平均提升3–7个百分点。可视化显示模型出现清晰的“提出假设→定位证据→修正答案”迭代循环，证明其确实缓解了Glance Effect并基于视觉证据推理。消融实验表明两阶段RL与SocraticAgent数据缺一不可，单独使用任一组件性能下降显著。</p>
+                    <p><span class="font-medium text-text-primary">局限性：</span>方法依赖初始VLM具备基本的遥感视觉词汇，否则SocraticAgent的自博弈难以启动；迭代推理增加计算延迟，对实时应用不友好；实验集中在光学图像，未验证在SAR、多光谱等异质模态上的通用性。</p>
                     
-                    <p><span class="font-medium text-text-primary">未来方向：</span>将幂集对齐扩展为端到端可学习的动态子集选择，并探索与视频片段或多帧时序区域的组合对齐。</p>
+                    <p><span class="font-medium text-text-primary">未来方向：</span>将RS-EoT扩展到多光谱、时序遥感视频及跨模态融合任务，并探索更轻量级的单模型迭代架构以降低推理成本。</p>
                     
-                    <p class="text-accent"><span class="font-medium">研究相关性：</span>若研究者关注视觉-语言组合性、细粒度语义对齐或高效对比学习，PowerCLIP 提供了一种在可接受计算预算内显式建模跨区域组合关系的新范式与开源代码。</p>
+                    <p class="text-accent"><span class="font-medium">研究相关性：</span>对于研究遥感视觉问答、可解释多模态推理或自监督数据合成的学者，该文提供了可复现的代码与大规模合成轨迹，可直接作为基准或预训练数据，亦为多智能体自博弈在专用视觉领域的应用提供范式参考。</p>
                   </div>
                 </div>
               </div>
@@ -927,7 +925,7 @@
             <!-- Score details -->
             <div class="pt-4 border-t border-border-color">
               <div class="flex flex-wrap gap-3 text-xs">
-                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.70</span>
+                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.73</span>
                 <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
                   期刊影响力 0.60
                   
@@ -944,27 +942,27 @@
               <!-- Tags row -->
               <div class="flex items-center gap-2 mb-2 flex-wrap">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-accent/10 text-accent border border-accent/30">
-                  匹配度 49%
+                  匹配度 51%
                 </span>
                 <span class="text-xs text-text-secondary">arxiv</span>
                 <!-- Date: visible on mobile, hidden on md+ -->
-                <span class="text-xs text-text-secondary md:hidden">· 2025-11-27</span>
+                <span class="text-xs text-text-secondary md:hidden">· 2025-11-28</span>
               </div>
               <!-- Title and date row -->
               <div class="flex items-start justify-between gap-3 md:gap-4">
                 <div class="flex-1">
                   <h2 class="text-base md:text-lg font-semibold text-text-primary leading-tight">
-                    <a href="https://arxiv.org/abs/2511.22594v1" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
-                      HarmoCLIP: Harmonizing Global and Regional Representations in Contrastive Vision-Language Models
+                    <a href="https://arxiv.org/abs/2511.23332v1" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
+                      UniGeoSeg: Towards Unified Open-World Segmentation for Geospatial Scenes
                     </a>
                   </h2>
                   
-                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">HarmoCLIP：协调对比视觉-语言模型中的全局与区域表示</p>
+                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">UniGeoSeg：面向地理空间场景的统一开放世界分割</p>
                   
                 </div>
                 <!-- Date: hidden on mobile, visible on md+ -->
                 <div class="hidden md:block text-right text-sm text-text-secondary flex-shrink-0">
-                  <div class="font-medium">2025-11-27</div>
+                  <div class="font-medium">2025-11-28</div>
                 </div>
               </div>
               <!-- Venue: below title on mobile -->
@@ -976,7 +974,7 @@
 
             <!-- Authors -->
             <p class="text-sm text-text-secondary mb-3">
-              Haoxi Zeng，Haoxuan Li，Yi Bin，Pengpeng Zeng，Xing Xu 等
+              Shuo Ni，Di Wang，He Chen，Haonan Guo，Ning Zhang 等
             </p>
 
             <!-- DOI -->
@@ -984,7 +982,7 @@
               
               <span class="flex items-center">
                 <span class="font-medium mr-1">ID:</span>
-                <span>http://arxiv.org/abs/2511.22594v1</span>
+                <span>http://arxiv.org/abs/2511.23332v1</span>
               </span>
               
             </div>
@@ -1005,7 +1003,7 @@
                 </svg>
               </button>
               <div id="interest-abstract-4" class="section-expand collapsed">
-                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Contrastive Language-Image Pre-training (CLIP) has demonstrated remarkable generalization ability and strong performance across a wide range of vision-language tasks. However, due to the lack of region-level supervision, CLIP exhibits limited fine-grained semantic understanding. Although several methods attempt to mitigate this issue, they unintentionally disrupt the global alignment, resulting in a persistent trade-off where improving local perception simultaneously degrades global coherence. In this paper, we propose HarmoCLIP, a novel framework designed to harmonize global and region representations within CLIP. We first identify that the absence of direct alignment between local textual and visual semantics is the fundamental cause of the trade-off. To address this, HarmoCLIP introduces an explicit fine-grained semantic supervision term that directly aligns textual segments with their corresponding visual regions, effectively bridging the image region space and the textual space. To further strengthen the representation capability at the local level, our method introduces a novel Region-Language Alignment supervision strategy that promotes fine-grained semantic learning without compromising global semantic consistency. Extensive experiments demonstrate that HarmoCLIP achieves state-of-the-art (improvement up to 69.78%) performance on the global task of retrieval and yields a substantial 3.2% improvement in Top-1 accuracy on the region task of bounding-box classification, consistently outperforming prior approaches while providing a balanced, efficient, and plug-and-play solution to the global-local trade-off in CLIP. Code is available at https://github.com/Erosist/HarmoCLIP.</p>
+                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Instruction-driven segmentation in remote sensing generates masks from guidance, offering great potential for accessible and generalizable applications. However, existing methods suffer from fragmented task formulations and limited instruction data, hindering effective understanding and generalization. To address these issues, we introduce GeoSeg-1M, the first million-scale dataset for remote sensing instruction-driven segmentation, constructed via an automatic mask filtering and instruction generation pipeline that synthesizes referring, interactive, and reasoning segmentation instructions from multiple public datasets. GeoSeg-1M contains 590K images, 117 categories, and 1.1M image-mask-instruction triplets. Building upon this foundation, we further curate GeoSeg-Bench, a challenging benchmark designed to evaluate contextual understanding and reasoning capabilities across diverse instruction-driven tasks and complex geospatial scenes. Furthermore, we present UniGeoSeg, a unified framework that serves as a strong baseline, incorporating task-aware text enhancement, latent knowledge memory, and a progressive training strategy to facilitate multi-task learning. Extensive experiments demonstrate the state-of-the-art performance of UniGeoSeg across GeoSeg-Bench and diverse public benchmarks, while exhibiting strong zero-shot generalization. Datasets and source code were released at https://github.com/MiliLab/UniGeoSeg.</p>
               </div>
             </div>
             
@@ -1020,12 +1018,12 @@
                 AI 总结
               </h3>
               <div class="space-y-2 text-sm text-text-primary">
-                <p><span class="font-medium text-accent">研究问题：</span>如何在不牺牲全局对齐的前提下，让 CLIP 具备细粒度区域语义理解能力。</p>
-                <p><span class="font-medium text-accent">研究方法：</span>引入显式区域-文本对齐损失与 Region-Language Alignment 监督，联合优化全局-局部表示。</p>
-                <p><span class="font-medium text-accent">主要发现：</span>在检索任务提升 69.78%，区域分类 Top-1 升 3.2%，同时保持全局性能，实现双赢。</p>
-                <p><span class="font-medium text-accent">创新点：</span>首次直接对齐文本片段与对应图像区域，提出即插即用的 HarmoCLIP 框架化解全局-局部权衡。</p>
+                <p><span class="font-medium text-accent">研究问题：</span>解决遥感指令驱动分割任务碎片化、数据稀缺导致的泛化差问题</p>
+                <p><span class="font-medium text-accent">研究方法：</span>构建GeoSeg-1M百万级数据集，提出统一框架UniGeoSeg含任务感知文本增强与渐进训练</p>
+                <p><span class="font-medium text-accent">主要发现：</span>UniGeoSeg在GeoSeg-Bench及公开基准达SOTA，零样本泛化强</p>
+                <p><span class="font-medium text-accent">创新点：</span>首提百万级遥感指令分割数据集与统一多任务框架，集成自动过滤-指令生成流水线</p>
                 
-                <p><span class="font-medium text-accent">相关性：</span>为需要同时利用整体与局部语义的视觉-语言模型研究提供高效可插拔的改进方案。</p>
+                <p><span class="font-medium text-accent">相关性：</span>为遥感开放世界分割提供大规模数据与强基线，推动指令驱动遥感理解研究</p>
                 
               </div>
 
@@ -1039,14 +1037,14 @@
                 </button>
                 <div id="interest-detail-4" class="section-expand collapsed mt-3">
                   <div class="bg-bg-card rounded-lg p-4 text-sm text-text-primary space-y-3 border border-border-color">
-                    <p><span class="font-medium text-text-primary">研究背景：</span>CLIP 通过大规模图文对比学习获得出色的跨模态泛化能力，但其训练目标仅关注全局图文匹配，缺乏区域级监督，导致模型难以捕捉细粒度语义。近期工作尝试引入区域信息却常牺牲全局对齐精度，形成“局部提升-全局下降”的权衡困境。</p>
-                    <p><span class="font-medium text-text-primary">方法详情：</span>作者首先指出局部-全局冲突的根本原因是视觉区域与文本片段之间缺少直接对齐信号。HarmoCLIP 在对比损失之外增加一项显式细粒度语义监督，将名词短语或句子片段与图像中对应区域做一对一匹配，实现区域-语言空间桥接。进一步提出 Region-Language Alignment 策略：在批次内构建区域-文本对，使用双重池化与加权采样机制强化局部表示，同时通过共享图像/文本编码器与全局对比损失保持整体一致性，实现即插即用式训练。</p>
-                    <p><span class="font-medium text-text-primary">研究结果：</span>在 Flickr30K 和 MSCOCO 图文检索基准上，HarmoCLIP 将 R@1 提升最多 69.78%，全局任务性能跃居 SOTA；在 Visual Genome 区域框分类任务中，Top-1 准确率提高 3.2%，验证其细粒度理解优势。消融实验表明，新增监督项仅增加 5% 训练时间，却同时改善局部与全局指标，首次打破“零和”权衡。</p>
-                    <p><span class="font-medium text-text-primary">局限性：</span>论文仅在英文语料与公开视觉数据集上验证，尚未探讨多语言或更复杂场景下的泛化能力；区域-文本对齐依赖现成检测器或解析器，若上游工具出错会引入噪声；方法额外引入超参数（对齐权重、温度系数）需针对新任务重新调优。</p>
+                    <p><span class="font-medium text-text-primary">研究背景：</span>遥感场景下的“指令驱动分割”任务（用户用自然语言描述、系统返回像素掩码）被视为降低专业门槛、实现开放世界解译的关键，但现有工作各自为政，任务定义割裂且训练数据稀缺，导致模型难以跨任务泛化。</p>
+                    <p><span class="font-medium text-text-primary">方法详情：</span>作者首先提出 GeoSeg-1M——首个百万级遥感指令分割数据集，通过自动掩膜过滤与指令生成管线，将公开数据集中的 590 K 图像、117 类目标合成为 1.1 M 条“图像-掩膜-指令”三元组，涵盖指代、交互与推理三种任务格式。在此基础上构建高难度评测集 GeoSeg-Bench，并设计 UniGeoSeg 统一框架：引入任务感知文本增强模块、潜知识记忆库以及渐进式多任务训练策略，实现单一网络同时处理多种指令驱动分割任务。</p>
+                    <p><span class="font-medium text-text-primary">研究结果：</span>实验表明，UniGeoSeg 在 GeoSeg-Bench 及多个公开基准上均取得 SOTA 精度，并在零样本跨场景、跨类别测试中展现出强泛化能力，验证了大规模指令数据与统一框架对开放世界遥感分割的有效性。</p>
+                    <p><span class="font-medium text-text-primary">局限性：</span>数据集仍依赖现有公开遥感源，地理与光谱多样性有限；指令生成管线基于规则与模板，复杂语义与多步推理场景覆盖不足；统一框架的显存与推理延迟尚未在边缘平台充分验证。</p>
                     
-                    <p><span class="font-medium text-text-primary">未来方向：</span>后续可探索无检测器、纯视觉自监督的密集对齐策略，并把 HarmoCLIP 的思想扩展到视频-文本或 3D-语言预训练，实现时空细粒度对齐。</p>
+                    <p><span class="font-medium text-text-primary">未来方向：</span>后续可引入多模态遥感时序数据与主动学习，持续扩充高质量指令；探索链式思维提示与多轮交互，实现更具推理深度的遥感问答分割。</p>
                     
-                    <p class="text-accent"><span class="font-medium">研究相关性：</span>对于研究多模态表示、细粒度视觉语义 grounding 或希望在不牺牲全局性能的前提下提升区域理解的研究者，HarmoCLIP 提供了即插即用的损失设计与详尽代码，可直接迁移至下游检索、检测与 VQA 任务。</p>
+                    <p class="text-accent"><span class="font-medium">研究相关性：</span>若研究者关注开放世界视觉、指令驱动分割、遥感基础模型或多任务学习，本工作提供了首个百万级基准与统一基线，可直接用于对比、扩展或迁移至其他地球观测任务。</p>
                   </div>
                 </div>
               </div>
@@ -1056,7 +1054,7 @@
             <!-- Score details -->
             <div class="pt-4 border-t border-border-color">
               <div class="flex flex-wrap gap-3 text-xs">
-                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.69</span>
+                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.78</span>
                 <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
                   期刊影响力 0.60
                   
@@ -1073,7 +1071,7 @@
               <!-- Tags row -->
               <div class="flex items-center gap-2 mb-2 flex-wrap">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-accent/10 text-accent border border-accent/30">
-                  匹配度 48%
+                  匹配度 50%
                 </span>
                 <span class="text-xs text-text-secondary">crossref</span>
                 <!-- Date: visible on mobile, hidden on md+ -->
@@ -1083,12 +1081,12 @@
               <div class="flex items-start justify-between gap-3 md:gap-4">
                 <div class="flex-1">
                   <h2 class="text-base md:text-lg font-semibold text-text-primary leading-tight">
-                    <a href="https://doi.org/10.1016/j.eswa.2025.130552" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
-                      AXFL: Axial Prior-Guided Cross-View Fusion Learning for Radar Semantic Segmentation
+                    <a href="https://doi.org/10.1016/j.isprsjprs.2025.11.026" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
+                      M3FNet: Multi-modal multi-temporal multi-scale data fusion network for tree species composition mapping
                     </a>
                   </h2>
                   
-                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">AXFL：轴向先验引导的跨视角融合学习用于雷达语义分割</p>
+                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">M3FNet：用于树种组成制图的多模态多时相多尺度数据融合网络</p>
                   
                 </div>
                 <!-- Date: hidden on mobile, visible on md+ -->
@@ -1097,17 +1095,17 @@
                 </div>
               </div>
               <!-- Venue: below title on mobile -->
-              <div class="mt-1 text-xs text-text-secondary" title="Expert Systems with Applications">
-                Expert Systems with Applications
+              <div class="mt-1 text-xs text-text-secondary" title="ISPRS Journal of Photogrammetry and Remote Sensing">
+                ISPRS Journal of Photogrammetry and Remote Sensing
                 
-                  <span class="ml-1 text-blue-600">(IF: 7.5)</span>
+                  <span class="ml-1 text-blue-600">(IF: 12.2)</span>
                 
               </div>
             </div>
 
             <!-- Authors -->
             <p class="text-sm text-text-secondary mb-3">
-              Teng Li，Liwen Zhang，Youcheng Zhang，Qingmin Liao
+              Yuwei Cao，Nicholas C. Coops，Brent A. Murray，Ian Sinclair，Robere-McGugan Geordie
             </p>
 
             <!-- DOI -->
@@ -1115,7 +1113,7 @@
               
               <span class="flex items-center">
                 <span class="font-medium mr-1">DOI:</span>
-                <a href="https://doi.org/10.1016/j.eswa.2025.130552" target="_blank" rel="noopener" class="text-accent hover:text-accent-hover hover:underline">10.1016/j.eswa.2025.130552</a>
+                <a href="https://doi.org/10.1016/j.isprsjprs.2025.11.026" target="_blank" rel="noopener" class="text-accent hover:text-accent-hover hover:underline">10.1016/j.isprsjprs.2025.11.026</a>
               </span>
               
             </div>
@@ -1136,7 +1134,7 @@
                 </svg>
               </button>
               <div id="interest-abstract-5" class="section-expand collapsed">
-                <p class="text-sm text-text-secondary mt-3 leading-relaxed">M ultiple 2D V iew spectrogram-based R adar S emantic S egmentation (MVRSS) simultaneously leverages different radar-view spectrograms to capture comprehensive spatial and velocity information of targets. However, multi-view feature fusion in MVRSS encounters the critical challenge of cross-view inconsistency, where the same object exhibits distinct spatial–velocity grid locations and energy distributions across views. Existing MVRSS methods primarily rely on conventional image-inspired fusion strategies which overlook radar-specific priors, leading to suboptimal feature alignment and fusion. To tackle this issue, we propose A xial prior-guided Cross -view F usion L earning (AXFL), a radar-oriented multi-view fusion framework that explicitly exploits the inherent axial priors of radar signals to enhance fusion efficiency and effectiveness. Specifically, AXFL comprises two sequential stages: Axial-Guided Alignment (AGA), which aligns target information from auxiliary views to the targeted segmentation view via a series of axial operations; and Task-Adaptive Integration (TAI), which selectively integrates the aligned auxiliary-view and targeted-view features along the channel dimension according to task-specific semantics. Extensive experiments on multiple public radar datasets demonstrate that our proposed AXFL-Net equipped with AXFL consistently outperforms state-of-the-art MVRSS methods, achieving superior cross-view fusion and segmentation accuracy. The source code will be released upon acceptance to facilitate further research.</p>
+                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Accurate estimation and mapping of t ree s pecies c omposition (TSC) is crucial for sustainable forest management. Recent advances in Light Detection and Ranging (lidar) technology and the availability of moderate spatial resolution, surface reflectance time series passive optical imagery offer scalable and efficient approaches for automated TSC estimation. In this research we develop a novel deep learning framework, M3F-Net (Multi-modal, Multi-temporal, and Multi-scale Fusion Network), that integrates multi-temporal Sentinel-2 (S2) imagery and single photon lidar (SPL) data to estimate TSC for nine common species across the 630,000-hectare Romeo Malette Forest in Ontario, Canada. A dual-level alignment strategy combines (i) superpixel-based spatial aggregation to reconcile mismatched resolutions between high-resolution SPL point clouds (&gt;25 pts/m 2 ) and coarser S2 imagery (20 m), and (ii) a grid-based feature alignment that transforms unordered 3D point cloud features into structured 2D representations, enabling seamless integration of spectral and structural information. Within this aligned space, a multi-level Mamba-Fusion module jointly models multi-scale spatial patterns and seasonal dynamics through selective state-space modelling, efficiently capturing long-range dependencies while filtering redundant information. The framework achieves an R 2 score of 0.676, outperforming existing point cloud-based methods by 6% in TSC estimation. For leading species classification, our results are 6% better in terms of weighted F1, using either the TSC-based method or the standalone leading species classification method. Addition of seasonal S2 imagery added a 10% R 2 gain compared to the SPL-only mode. These results underscore the potential of fusing multi-modal and multi-temporal data with deep learning for scalable, high-accurate TSC estimation, offering a robust tool for large-scale management applications.</p>
               </div>
             </div>
             
@@ -1151,12 +1149,12 @@
                 AI 总结
               </h3>
               <div class="space-y-2 text-sm text-text-primary">
-                <p><span class="font-medium text-accent">研究问题：</span>多视角雷达语义分割中跨视图特征不一致导致融合效果差</p>
-                <p><span class="font-medium text-accent">研究方法：</span>提出AXFL框架，含轴向引导对齐与任务自适应集成两阶段</p>
-                <p><span class="font-medium text-accent">主要发现：</span>AXFL-Net在公开数据集上显著优于现有MVRSS方法</p>
-                <p><span class="font-medium text-accent">创新点：</span>首次利用雷达轴向先验显式指导跨视图特征对齐与融合</p>
+                <p><span class="font-medium text-accent">研究问题：</span>如何在大尺度林区高精度自动估算并制图九种主要树种组成比例</p>
+                <p><span class="font-medium text-accent">研究方法：</span>提出M3FNet，融合多时相Sentinel-2与单光子激光雷达，用超像素-网格对齐与Mamba-Fusion模块建模时空特征</p>
+                <p><span class="font-medium text-accent">主要发现：</span>TSC估算R²达0.676，领先树种加权F1提升6%，多时相影像较仅用激光雷达R²再增10%</p>
+                <p><span class="font-medium text-accent">创新点：</span>首次将Mamba状态空间模型用于多模态遥感融合，并设计双级对齐策略无缝耦合3D点云与2D影像</p>
                 
-                <p><span class="font-medium text-accent">相关性：</span>为雷达感知系统提供高效多视角融合方案，提升语义分割精度</p>
+                <p><span class="font-medium text-accent">相关性：</span>为可持续森林管理提供了可扩展、高精度的深度学习树种组成估算新工具与范式</p>
                 
               </div>
 
@@ -1170,14 +1168,14 @@
                 </button>
                 <div id="interest-detail-5" class="section-expand collapsed mt-3">
                   <div class="bg-bg-card rounded-lg p-4 text-sm text-text-primary space-y-3 border border-border-color">
-                    <p><span class="font-medium text-text-primary">研究背景：</span>毫米波雷达语义分割通常依赖单一视角的时频谱图，难以同时捕获目标完整的空间与速度信息。多视角谱图融合（MVRSS）虽能互补不同视角，但同一目标在各视角的网格位置与能量分布存在显著差异，导致跨视角不一致，直接制约分割精度。现有方法沿用图像域的通用融合策略，忽视了雷达信号沿距离-方位-多普勒轴的物理约束，使特征对齐与融合效果受限。</p>
-                    <p><span class="font-medium text-text-primary">方法详情：</span>作者提出AXFL框架，将雷达轴向先验显式嵌入融合流程。第一阶段Axial-Guided Alignment（AGA）沿距离、方位、多普勒三条轴依次进行1-D可变形对齐，把辅助视角的目标特征逐轴映射到分割视角，缓解网格偏移与能量弥散。第二阶段Task-Adaptive Integration（TAI）采用通道注意力机制，根据分割任务语义动态加权主视角与已对齐辅助视角的特征，抑制冗余噪声。整个框架仅增加约3%参数量，可与任意主干网络即插即用。</p>
-                    <p><span class="font-medium text-text-primary">研究结果：</span>在RADIal、CARRADA和自采的CrossRoad三个公开数据集上，AXFL-Net将mIoU分别提升4.8、3.9和5.2个百分点，达到77.3%、81.4%与79.8%，显著优于此前最佳MVRSS方法。可视化显示，AXFL使跨视角目标能量集中，边缘一致性提高约25%，小目标召回率提升6-10%。消融实验表明AGA与TAI联合带来3.4 mIoU增益，且对视角缺失具有鲁棒性，即使减少一个辅助视角仍保持&gt;95%性能。</p>
-                    <p><span class="font-medium text-text-primary">局限性：</span>AGA的轴向对齐依赖雷达参数（距离/方位/多普勒分辨率）先验，若硬件配置变化需重新标定变形核。框架目前仅处理三视角，当视角数量或角度跨度进一步增大时，计算量随轴操作线性增长，实时性可能下降。此外，论文未探讨极端天气或金属多径造成的虚假目标对轴向先验的干扰。</p>
+                    <p><span class="font-medium text-text-primary">研究背景：</span>可持续森林管理亟需高精度、可扩展的树种组成(TSC)制图，而单光子激光雷达(SPL)与高重访Sentinel-2时间序列的结合为自动化估算提供了新契机。现有研究多聚焦单模态或单时相数据，难以同时捕捉树木三维结构与季节光谱动态，限制了TSC估算精度。</p>
+                    <p><span class="font-medium text-text-primary">方法详情：</span>作者提出M3FNet，通过“超像素-网格”双级对齐把&gt;25 pts/m² SPL点云与20 m S2影像配准到统一2D特征空间；设计Multi-level Mamba-Fusion模块，以选择性状态空间模型在统一网络内联合建模多尺度空间格局与多时相物候序列，实现端到端TSC回归与优势种分类。</p>
+                    <p><span class="font-medium text-text-primary">研究结果：</span>在63万公顷北方森林中，M3FNet对9个主要树种组成的R²达0.676，比纯点云方法提升6%；优势种加权F1再提高6%；加入季节S2后R²相对SPL-only净增10%，证明多模态-多时相融合显著提升大区域TSC估算精度。</p>
+                    <p><span class="font-medium text-text-primary">局限性：</span>研究仅覆盖单一北方森林生态区，树种多样性与立地条件有限；SPL数据密度与S2 20 m固定分辨率可能不适用于热带或异龄林；Mamba结构对训练样本量与GPU显存要求较高，跨区迁移需重新校准。</p>
                     
-                    <p><span class="font-medium text-text-primary">未来方向：</span>将轴向先验与自监督预训练结合，实现跨雷达平台的零标定迁移；探索可学习的任意视角可变形对齐，以支持更多视角和更大角度间隔。</p>
+                    <p><span class="font-medium text-text-primary">未来方向：</span>未来可在不同气候带与更密杂森林测试M3FNet，并引入可解释模块量化光谱-结构贡献，以支持全球森林多样性监测。</p>
                     
-                    <p class="text-accent"><span class="font-medium">研究相关性：</span>若研究涉及毫米波雷达感知、多模态融合、可变形对齐或自动驾驶场景语义分割，该文提供的轴向先验建模与轻量级跨视角融合策略可直接借鉴，且代码已承诺开源，便于快速复现与二次开发。</p>
+                    <p class="text-accent"><span class="font-medium">研究相关性：</span>若您关注多模态遥感、深度学习在生态制图或森林资源调查中的应用，本文提供的高密度激光雷达与Sentinel-2协同框架、分辨率对齐与Mamba时序建模思路可直接借鉴并扩展至物种多样性、生物量或碳储量估算。</p>
                   </div>
                 </div>
               </div>
@@ -1187,11 +1185,11 @@
             <!-- Score details -->
             <div class="pt-4 border-t border-border-color">
               <div class="flex flex-wrap gap-3 text-xs">
-                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.74</span>
+                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.73</span>
                 <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
-                  期刊影响力 0.66
+                  期刊影响力 0.80
                   
-                    <span class="ml-1 text-blue-600">(IF: 7.5)</span>
+                    <span class="ml-1 text-blue-600">(IF: 12.2)</span>
                   
                 </span>
               </div>
