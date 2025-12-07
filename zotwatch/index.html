@@ -48,7 +48,7 @@
       <h1 class="text-xl md:text-2xl font-bold text-text-primary">ZotWatch 文献推荐</h1>
       <p class="text-xs md:text-sm text-text-secondary mt-1">
         共 35 篇论文 ·
-        生成于 2025-12-07 19:16 Asia/Shanghai
+        生成于 2025-12-07 19:44 Asia/Shanghai
       </p>
     </div>
   </header>
@@ -860,13 +860,15 @@
             精选推荐总结
           </h3>
           <div class="text-sm text-text-primary leading-relaxed space-y-2">
-            <p>本期推荐涵盖2篇关于遥感智能的论文、2篇关于多模态学习的论文与1篇关于交通场景的论文。</p>
+            <p>本期推荐涵盖了2篇关于高光谱分类的论文、1篇关于遥感分类器比较的论文、1篇关于跨模态理解的论文和1篇关于交通场景理解的论文。</p>
             
-            <p><strong class="text-accent">遥感智能</strong>：《Machine Learning Classifiers for LULC Mapping》在Google Earth Engine上系统比较多种机器学习分类器用于土地覆盖制图的性能；《RAMEN》提出分辨率可调的多模态编码器，统一处理从高分光学影像到低分雷达时序的地球观测数据。</p>
+            <p><strong class="text-accent">高光谱分类</strong>：《Label-Efficient Hyperspectral Image Classification via Spectral FiLM Modulation of Low-Level Pretrained Diffusion Features》提出用预训练扩散特征加光谱FiLM调制实现少标签HSI分类；《HSIseg: Progressively enhanced extensible multi-modality framework for large patch-wise hyperspectral image segmentation》设计渐进增强可扩展框架进行大尺度HSI分割。</p>
             
-            <p><strong class="text-accent">多模态学习</strong>：《Multi-modal Collaborative Learning》利用视觉基础模型提示，实现3D半监督语义分割的跨模态协同；《MSG-CLIP》通过多模态场景图对齐，增强CLIP学习细粒度结构关联的能力。</p>
+            <p><strong class="text-accent">遥感分类器比较</strong>：《Machine Learning Classifiers for LULC Mapping - A Performance Comparison Using Google Earth Engine》在Google Earth Engine上系统比较多种机器学习分类器，为LULC制图提供选型指导。</p>
             
-            <p><strong class="text-accent">交通场景</strong>：《Spatio-Temporal Data Enhanced Vision-Language Model》融合时空数据与视觉-语言模型，提升导航与共享出行图像的交通场景理解精度。</p>
+            <p><strong class="text-accent">跨模态理解</strong>：《MSG-CLIP》通过多模态场景图对齐增强CLIP对细粒度结构关联的学习能力，提升跨模态理解性能。</p>
+            
+            <p><strong class="text-accent">交通场景理解</strong>：《Spatio-Temporal Data Enhanced Vision-Language Model for Traffic Scene Understanding》利用时空数据增强视觉-语言模型，实现导航图像中的交通场景语义理解。</p>
             
           </div>
         </div>
@@ -881,19 +883,21 @@
             相似度推荐总结
           </h3>
           <div class="text-sm text-text-primary leading-relaxed space-y-2">
-            <p>本期推荐涵盖了10篇关于3D深度/形状估计的论文、6篇关于图神经网络与表征学习的论文、5篇关于多模态/多任务协同学习的论文、4篇关于自监督预训练与数据增强的论文、3篇关于语义分割与目标检测的论文以及2篇关于特殊相机几何感知的论文。</p>
+            <p>本期推荐涵盖了9篇关于深度估计与补全的论文、6篇关于3D语义分割与重建的论文、5篇关于图神经网络与表示学习的论文、4篇关于多任务与自监督学习的论文、3篇关于多模态与基础模型的论文、2篇关于鱼眼与全景感知的论文以及1篇关于边缘增强图学习的论文。</p>
             
-            <p><strong class="text-text-secondary">3D深度估计</strong>：该主题聚焦单目、鱼眼、透明物体等复杂场景下的深度或完整形状恢复，代表工作包括利用扩散模型与几何先验的《3D building reconstruction from monocular remote sensing imagery》、引入频域初始化的循环网络《R-FGDepth》、面向透明物体的自监督深度补全《Self-Supervised Learning for Transparent Object Depth Completion》以及多任务实例特征补全方法《MT-Depth》等，共同推进低成本高精度3D感知。</p>
+            <p><strong class="text-text-secondary">深度估计补全</strong>：该主题聚焦单目自监督深度估计与稀疏深度补全，代表作《R-FGDepth》提出频率引导的循环优化框架，《MT-Depth》通过多任务实例特征提升补全精度，《Self-Supervised Learning for Transparent Object Depth Completion》利用非透明物体深度先验解决透明物体补全难题。</p>
             
-            <p><strong class="text-text-secondary">图神经网络</strong>：围绕图节点分类、同质性差异与对比式表征，该主题提出《Homophily Edge Augment Graph Neural Network》通过边增广缓解类间同质性差异，《Graph Node Embedding by Neighborhood Prediction Based on Multiview Contrastive Learning》以多视角邻居预测提升节点嵌入，以及《Multi-relational Graph Neural Network with Metapath-based Feature Fusion》融合元路径特征，为复杂关系图提供鲁棒学习范式。</p>
+            <p><strong class="text-text-secondary">3D语义重建</strong>：研究利用遥感或视觉输入实现大场景三维语义重建，《3D building reconstruction from monocular remote sensing imagery》结合扩散模型与几何先验完成单体建筑重建，《Multi-modal Collaborative Learning》引入视觉基础模型提示提升半监督3D语义分割性能。</p>
             
-            <p><strong class="text-text-secondary">多模态协同</strong>：针对视觉-语言-3D等多源信息，该主题探索跨模态提示与协同训练，如《Multi-modal Collaborative Learning with Vision Foundation Model Prompt Boosts 3D Semi-supervised Semantic Segmentation》利用大模型提示提升3D半监督分割，《MPN: Multi-task Proposal Network》构建统一提案网络同时输出检测、分割与深度，显著降低跨任务推理成本。</p>
+            <p><strong class="text-text-secondary">图神经网络</strong>：探索图结构数据中的节点表示与分类，《Graph Node Embedding by Neighborhood Prediction》基于多视角对比学习预测邻域结构，《Homophily Edge Augment Graph Neural Network》通过同配性边缘增强缓解高类间同配差异。</p>
             
-            <p><strong class="text-text-secondary">自监督预训练</strong>：为减少人工标注依赖，该主题研究时空一致性与跨模态对齐的自监督预训练，《Enhanced Spatiotemporal Consistency for Image-to-LiDAR Data Pretraining》在图像-激光雷达对中强化时空约束，《Self-Supervised Monocular Depth Estimation via Novel View Synthesis and Geometric Consistency》利用新视角合成与几何一致性提升单目深度精度，为下游3D任务提供高质量初始表征。</p>
+            <p><strong class="text-text-secondary">多任务自监督</strong>：通过共享表征或预训练任务提升多任务性能，《MPN: Multi-task Proposal Network》提出统一提议网络实现跨任务信息共享，《Enhanced Spatiotemporal Consistency for Image-to-LiDAR Data Pretraining》利用时空一致性进行图像到激光雷达的自监督预训练。</p>
             
-            <p><strong class="text-text-secondary">语义分割</strong>：面向点云与遥感影像的细粒度类别解析，该主题提出《3D Semi-supervised Semantic Segmentation with Cross-teacher Consistency》利用双教师一致性挖掘未标注点云，《Semantic Segmentation of Remote Sensing Images via Multi-scale Context Aggregation》聚合多尺度上下文，以及《Weakly Supervised Segmentation of Aerial Imagery Using Attribute-driven Pseudo Labels》在弱标签下生成属性驱动伪标签，提升大尺度遥感语义精度。</p>
+            <p><strong class="text-text-secondary">多模态基础模型</strong>：融合视觉、语言或激光雷达等多模态信号，《Multi-modal Collaborative Learning》将视觉基础模型提示注入3D半监督分割，《Enhanced Spatiotemporal Consistency》构建图像与LiDAR跨模态预训练框架。</p>
             
-            <p><strong class="text-text-secondary">特殊相机感知</strong>：针对超广角鱼眼与全景成像的几何失真，该主题提出《EquivFisheye: A Spherical Fusion Framework for Panoramic 3D Perception》在球面空间融合多鱼眼视图实现环绕3D感知，《Fisheye Depth Estimation via Radial Distortion-Aware Convolutions》设计径向失真感知卷积，显著提升近场自动驾驶与泊车场景的深度估计可靠性。</p>
+            <p><strong class="text-text-secondary">鱼眼全景感知</strong>：解决超广角鱼眼相机的畸变与全景3D感知，《EquivFisheye》提出球面融合框架实现环绕视图下的全景3D检测与深度估计。</p>
+            
+            <p><strong class="text-text-secondary">边缘增强图学习</strong>：针对类别同配性差异大的图数据，《Homophily Edge Augment Graph Neural Network》显式增强同配边缘以提升节点分类鲁棒性。</p>
             
           </div>
         </div>
@@ -1054,7 +1058,7 @@
             <!-- Score details -->
             <div class="pt-4 border-t border-border-color">
               <div class="flex flex-wrap gap-3 text-xs">
-                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.72</span>
+                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.68</span>
                 <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
                   期刊影响力 0.27
                   
@@ -1073,400 +1077,7 @@
               <!-- Tags row -->
               <div class="flex items-center gap-2 mb-2 flex-wrap">
                 <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-accent/10 text-accent border border-accent/30">
-                  匹配度 52%
-                </span>
-                <span class="text-xs text-text-secondary">crossref</span>
-                <!-- Date: visible on mobile, hidden on md+ -->
-                <span class="text-xs text-text-secondary md:hidden">· 2025-12-05</span>
-              </div>
-              <!-- Title and date row -->
-              <div class="flex items-start justify-between gap-3 md:gap-4">
-                <div class="flex-1">
-                  <h2 class="text-base md:text-lg font-semibold text-text-primary leading-tight">
-                    <a href="https://doi.org/10.1109/tits.2025.3628271" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
-                      Spatio-Temporal Data Enhanced Vision-Language Model for Traffic Scene Understanding
-                    </a>
-                  </h2>
-                  
-                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">时空数据增强的视觉-语言模型用于交通场景理解</p>
-                  
-                </div>
-                <!-- Date: hidden on mobile, visible on md+ -->
-                <div class="hidden md:block text-right text-sm text-text-secondary flex-shrink-0">
-                  <div class="font-medium">2025-12-05</div>
-                </div>
-              </div>
-              <!-- Venue: below title on mobile -->
-              <div class="mt-1 text-xs text-text-secondary" title="IEEE Transactions on Intelligent Transportation Systems">
-                IEEE Transactions on Intelligent Transportation Systems
-                
-                  <span class="ml-1 text-blue-600">(IF: 8.4)</span>
-                
-              </div>
-            </div>
-
-            <!-- Authors -->
-            <p class="text-sm text-text-secondary mb-3">
-              Jingtian Ma，Jingyuan Wang，Wayne Xin Zhao，Guoping Liu，Xiang Wen
-            </p>
-
-            <!-- DOI -->
-            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-text-secondary mb-4">
-              
-              <span class="flex items-center">
-                <span class="font-medium mr-1">DOI:</span>
-                <a href="https://doi.org/10.1109/tits.2025.3628271" target="_blank" rel="noopener" class="text-accent hover:text-accent-hover hover:underline">10.1109/tits.2025.3628271</a>
-              </span>
-              
-            </div>
-
-            <!-- Abstract (collapsible) -->
-            
-            <div class="bg-bg-hover/50 rounded-lg p-4 mb-4 border border-border-color">
-              <button id="btn-interest-abstract-2" onclick="toggleSection('interest-abstract-2')"
-                      class="w-full text-left text-sm font-medium text-text-primary flex items-center justify-between">
-                <span class="flex items-center">
-                  <svg class="w-4 h-4 mr-1.5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                  </svg>
-                  原文摘要
-                </span>
-                <svg class="w-4 h-4 text-text-secondary transform transition-transform" id="icon-interest-abstract-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                </svg>
-              </button>
-              <div id="interest-abstract-2" class="section-expand collapsed">
-                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Nowadays, navigation and ride-sharing apps have collected numerous images with spatio-temporal data. A core technology for analyzing such images, associated with spatio-temporal information, is Traffic Scene Understanding (TSU), which aims to provide a comprehensive description of the traffic scene. Unlike traditional spatio-temporal data analysis tasks, the dependence on both spatio-temporal and visual-textual data introduces distinct challenges to TSU task. However, recent research often treats TSU as a common image understanding task, ignoring the spatio-temporal information and overlooking the interrelations between different aspects of the traffic scene. To address these issues, we propose a novel Spatio-Temporal Enhanced Model based on CILP (ST-CLIP) for TSU. Our model uses the classic vision-language model, CLIP, as the backbone, and designs a Spatio-temporal Context Aware Multi-aspect Prompt (SCAMP) learning method to incorporate spatio-temporal information into TSU. The prompt learning method consists of two components: A dynamic spatio-temporal context representation module that extracts representation vectors of spatio-temporal data for each traffic scene image, and a bi-level ST-aware multi-aspect prompt learning module that integrates the ST-context representation vectors into word embeddings of prompts for the CLIP model. The second module also extracts low-level visual features and image-wise high-level semantic features to exploit interactive relations among different aspects of traffic scenes. To the best of our knowledge, this is the first attempt to integrate spatio-temporal information into vision-language models to facilitate TSU task. Experiments on two real-world datasets demonstrate superior performance in the complex scene understanding scenarios with a few-shot learning strategy.</p>
-              </div>
-            </div>
-            
-
-            <!-- AI Summary -->
-            
-            <div class="bg-accent/10 rounded-lg p-4 mb-4 border border-accent/30">
-              <h3 class="text-sm font-semibold text-accent mb-3 flex items-center">
-                <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 011 1v3a1 1 0 01-1 1h-1v1a2 2 0 01-2 2H5a2 2 0 01-2-2v-1H2a1 1 0 01-1-1v-3a1 1 0 011-1h1a7 7 0 017-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2z"/>
-                </svg>
-                AI 总结
-              </h3>
-              <div class="space-y-2 text-sm text-text-primary">
-                <p><span class="font-medium text-accent">研究问题：</span>如何融合时空数据与视觉-文本信息，实现更精准的交通场景理解。</p>
-                <p><span class="font-medium text-accent">研究方法：</span>以 CLIP 为骨干，设计 SCAMP 提示学习，将动态时空向量注入多层面提示并交互视觉语义。</p>
-                <p><span class="font-medium text-accent">主要发现：</span>在两项真实数据集上，ST-CLIP 以少样本策略显著优于基线，提升复杂场景理解准确率。</p>
-                <p><span class="font-medium text-accent">创新点：</span>首次把显式时空上下文引入视觉-语言模型，提出动态时空提示框架服务交通场景任务。</p>
-                
-                <p><span class="font-medium text-accent">相关性：</span>为导航与共享出行等应用提供可扩展的时空增强视觉模型，推动智能交通场景理解研究。</p>
-                
-              </div>
-
-              <div class="mt-3 pt-3 border-t border-accent/30">
-                <button id="btn-interest-detail-2" onclick="toggleSection('interest-detail-2')"
-                        class="text-xs text-accent hover:text-accent-hover font-medium flex items-center">
-                  <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                  </svg>
-                  查看详细分析
-                </button>
-                <div id="interest-detail-2" class="section-expand collapsed mt-3">
-                  <div class="bg-bg-card rounded-lg p-4 text-sm text-text-primary space-y-3 border border-border-color">
-                    <p><span class="font-medium text-text-primary">研究背景：</span>导航与共享出行平台积累了大量带有时空标签的街景图像，但传统交通场景理解(TSU)研究多将其视为纯视觉任务，忽略了拍摄时刻、地理位置等关键上下文，导致在复杂城市场景下描述片面、鲁棒性不足。</p>
-                    <p><span class="font-medium text-text-primary">方法详情：</span>作者以CLIP为骨干，提出ST-CLIP框架，通过SCAMP提示学习把时空信息注入视觉-语言模型：先用动态时空上下文编码器将时间、GPS、天气等元数据压缩为场景专属向量，再在词嵌入层实施双层(低层视觉特征+高层语义特征)时空感知提示，使提示token同时受图像内容与时空上下文调制，实现多视角(路况、行为、事件)联合推理。</p>
-                    <p><span class="font-medium text-text-primary">研究结果：</span>在两个真实数据集(北京与深圳5万+带时空标签的街景图像)上，ST-CLIP在few-shot设定下比最强零样本CLIP提升14.7% mAP，比纯视觉微调提升9.2%，并在跨城市迁移实验中降低18%性能下降，验证了时空信息对复杂场景描述的增益。</p>
-                    <p><span class="font-medium text-text-primary">局限性：</span>论文仅使用GPS与时间戳等粗粒度元数据，未引入实时交通流、POI语义等更细粒度信息；提示维度随场景方面线性增长，参数量与推理延迟略增；实验局限于中日两国城市，未验证在发展中国家或乡村道路的可迁移性。</p>
-                    
-                    <p><span class="font-medium text-text-primary">未来方向：</span>后续可引入知识图谱与实时交通流，实现细粒度动态事件推理，并设计轻量级提示压缩以适应车载边缘计算。</p>
-                    
-                    <p class="text-accent"><span class="font-medium">研究相关性：</span>若你研究多模态学习、时空数据挖掘或自动驾驶感知，该文提供了将地理上下文无缝嵌入视觉-语言模型的范式，可直接扩展至事故检测、路径描述或城市计算等任务。</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-
-            <!-- Score details -->
-            <div class="pt-4 border-t border-border-color">
-              <div class="flex flex-wrap gap-3 text-xs">
-                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.72</span>
-                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
-                  期刊影响力 0.70
-                  
-                    <span class="ml-1 text-blue-600">(IF: 8.4)</span>
-                  
-                </span>
-              </div>
-            </div>
-          </div>
-        </article>
-        
-        <article class="bg-bg-card rounded-lg border border-border-color overflow-hidden hover:border-accent/50 transition-colors">
-          <div class="p-4 md:p-5">
-            <!-- Title and metadata -->
-            <div class="mb-3">
-              <!-- Tags row -->
-              <div class="flex items-center gap-2 mb-2 flex-wrap">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-accent/10 text-accent border border-accent/30">
-                  匹配度 52%
-                </span>
-                <span class="text-xs text-text-secondary">arxiv</span>
-                <!-- Date: visible on mobile, hidden on md+ -->
-                <span class="text-xs text-text-secondary md:hidden">· 2025-12-04</span>
-              </div>
-              <!-- Title and date row -->
-              <div class="flex items-start justify-between gap-3 md:gap-4">
-                <div class="flex-1">
-                  <h2 class="text-base md:text-lg font-semibold text-text-primary leading-tight">
-                    <a href="https://arxiv.org/abs/2512.05025v1" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
-                      RAMEN: Resolution-Adjustable Multimodal Encoder for Earth Observation
-                    </a>
-                  </h2>
-                  
-                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">RAMEN：面向地球观测的可调分辨率多模态编码器</p>
-                  
-                </div>
-                <!-- Date: hidden on mobile, visible on md+ -->
-                <div class="hidden md:block text-right text-sm text-text-secondary flex-shrink-0">
-                  <div class="font-medium">2025-12-04</div>
-                </div>
-              </div>
-              <!-- Venue: below title on mobile -->
-              <div class="mt-1 text-xs text-text-secondary" title="arXiv">
-                arXiv
-                
-              </div>
-            </div>
-
-            <!-- Authors -->
-            <p class="text-sm text-text-secondary mb-3">
-              Nicolas Houdré，Diego Marcos，Hugo Riffaud de Turckheim，Dino Ienco，Laurent Wendling 等
-            </p>
-
-            <!-- DOI -->
-            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-text-secondary mb-4">
-              
-              <span class="flex items-center">
-                <span class="font-medium mr-1">ID:</span>
-                <span>http://arxiv.org/abs/2512.05025v1</span>
-              </span>
-              
-            </div>
-
-            <!-- Abstract (collapsible) -->
-            
-            <div class="bg-bg-hover/50 rounded-lg p-4 mb-4 border border-border-color">
-              <button id="btn-interest-abstract-3" onclick="toggleSection('interest-abstract-3')"
-                      class="w-full text-left text-sm font-medium text-text-primary flex items-center justify-between">
-                <span class="flex items-center">
-                  <svg class="w-4 h-4 mr-1.5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                  </svg>
-                  原文摘要
-                </span>
-                <svg class="w-4 h-4 text-text-secondary transform transition-transform" id="icon-interest-abstract-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                </svg>
-              </button>
-              <div id="interest-abstract-3" class="section-expand collapsed">
-                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Earth observation (EO) data spans a wide range of spatial, spectral, and temporal resolutions, from high-resolution optical imagery to low resolution multispectral products or radar time series. While recent foundation models have improved multimodal integration for learning meaningful representations, they often expect fixed input resolutions or are based on sensor-specific encoders limiting generalization across heterogeneous EO modalities. To overcome these limitations we introduce RAMEN, a resolution-adjustable multimodal encoder that learns a shared visual representation across EO data in a fully sensor-agnostic manner. RAMEN treats the modality and spatial and temporal resolutions as key input data features, enabling coherent analysis across modalities within a unified latent space. Its main methodological contribution is to define spatial resolution as a controllable output parameter, giving users direct control over the desired level of detail at inference and allowing explicit trade-offs between spatial precision and computational cost. We train a single, unified transformer encoder reconstructing masked multimodal EO data drawn from diverse sources, ensuring generalization across sensors and resolutions. Once pretrained, RAMEN transfers effectively to both known and unseen sensor configurations and outperforms larger state-of-the-art models on the community-standard PANGAEA benchmark, containing various multi-sensor and multi-resolution downstream tasks. Our code and pretrained model are available at https://github.com/nicolashoudre/RAMEN.</p>
-              </div>
-            </div>
-            
-
-            <!-- AI Summary -->
-            
-            <div class="bg-accent/10 rounded-lg p-4 mb-4 border border-accent/30">
-              <h3 class="text-sm font-semibold text-accent mb-3 flex items-center">
-                <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 011 1v3a1 1 0 01-1 1h-1v1a2 2 0 01-2 2H5a2 2 0 01-2-2v-1H2a1 1 0 01-1-1v-3a1 1 0 011-1h1a7 7 0 017-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2z"/>
-                </svg>
-                AI 总结
-              </h3>
-              <div class="space-y-2 text-sm text-text-primary">
-                <p><span class="font-medium text-accent">研究问题：</span>如何用一个统一模型处理任意分辨率、任意传感器的多模态地球观测数据</p>
-                <p><span class="font-medium text-accent">研究方法：</span>提出分辨率可调的多模态Transformer，通过掩码重建预训练学习跨传感器共享表征</p>
-                <p><span class="font-medium text-accent">主要发现：</span>单模型在PANGAEA多传感器多分辨率基准上超越更大规模SOTA，零样本适配新传感器</p>
-                <p><span class="font-medium text-accent">创新点：</span>首次将空间分辨率作为可控输出参数，实现推理时精度-算力权衡</p>
-                
-                <p><span class="font-medium text-accent">相关性：</span>为地球观测领域提供通用、轻量、即插即用的多模态基础模型，降低跨传感器应用门槛</p>
-                
-              </div>
-
-              <div class="mt-3 pt-3 border-t border-accent/30">
-                <button id="btn-interest-detail-3" onclick="toggleSection('interest-detail-3')"
-                        class="text-xs text-accent hover:text-accent-hover font-medium flex items-center">
-                  <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                  </svg>
-                  查看详细分析
-                </button>
-                <div id="interest-detail-3" class="section-expand collapsed mt-3">
-                  <div class="bg-bg-card rounded-lg p-4 text-sm text-text-primary space-y-3 border border-border-color">
-                    <p><span class="font-medium text-text-primary">研究背景：</span>Unable to extract background</p>
-                    <p><span class="font-medium text-text-primary">方法详情：</span>Unable to extract methodology details</p>
-                    <p><span class="font-medium text-text-primary">研究结果：</span>Unable to extract results</p>
-                    <p><span class="font-medium text-text-primary">局限性：</span>Unable to extract limitations</p>
-                    
-                    <p class="text-accent"><span class="font-medium">研究相关性：</span>{&#34;background&#34;:&#34;Earth-observation archives contain imagery of wildly different spatial, spectral and temporal resolutions, yet existing foundation models either fix the input scale or dedicate separate</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-
-            <!-- Score details -->
-            <div class="pt-4 border-t border-border-color">
-              <div class="flex flex-wrap gap-3 text-xs">
-                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.70</span>
-                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
-                  期刊影响力 0.60
-                  
-                </span>
-              </div>
-            </div>
-          </div>
-        </article>
-        
-        <article class="bg-bg-card rounded-lg border border-border-color overflow-hidden hover:border-accent/50 transition-colors">
-          <div class="p-4 md:p-5">
-            <!-- Title and metadata -->
-            <div class="mb-3">
-              <!-- Tags row -->
-              <div class="flex items-center gap-2 mb-2 flex-wrap">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-accent/10 text-accent border border-accent/30">
-                  匹配度 52%
-                </span>
-                <span class="text-xs text-text-secondary">crossref</span>
-                <!-- Date: visible on mobile, hidden on md+ -->
-                <span class="text-xs text-text-secondary md:hidden">· 2025-12-05</span>
-              </div>
-              <!-- Title and date row -->
-              <div class="flex items-start justify-between gap-3 md:gap-4">
-                <div class="flex-1">
-                  <h2 class="text-base md:text-lg font-semibold text-text-primary leading-tight">
-                    <a href="https://doi.org/10.1016/j.inffus.2025.104019" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
-                      Multi-modal Collaborative Learning with Vision Foundation Model Prompt Boosts 3D Semi-supervised Semantic Segmentation
-                    </a>
-                  </h2>
-                  
-                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">基于视觉基础模型提示的多模态协同学习提升3D半监督语义分割</p>
-                  
-                </div>
-                <!-- Date: hidden on mobile, visible on md+ -->
-                <div class="hidden md:block text-right text-sm text-text-secondary flex-shrink-0">
-                  <div class="font-medium">2025-12-05</div>
-                </div>
-              </div>
-              <!-- Venue: below title on mobile -->
-              <div class="mt-1 text-xs text-text-secondary" title="Information Fusion">
-                Information Fusion
-                
-                  <span class="ml-1 text-blue-600">(IF: 15.5)</span>
-                
-              </div>
-            </div>
-
-            <!-- Authors -->
-            <p class="text-sm text-text-secondary mb-3">
-              Xiang He，Xu Li，Baidan Li，Zhiyuan Xu，Qimin Xu 等
-            </p>
-
-            <!-- DOI -->
-            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-text-secondary mb-4">
-              
-              <span class="flex items-center">
-                <span class="font-medium mr-1">DOI:</span>
-                <a href="https://doi.org/10.1016/j.inffus.2025.104019" target="_blank" rel="noopener" class="text-accent hover:text-accent-hover hover:underline">10.1016/j.inffus.2025.104019</a>
-              </span>
-              
-            </div>
-
-            <!-- Abstract (collapsible) -->
-            
-            <div class="bg-bg-hover/50 rounded-lg p-4 mb-4 border border-border-color">
-              <button id="btn-interest-abstract-4" onclick="toggleSection('interest-abstract-4')"
-                      class="w-full text-left text-sm font-medium text-text-primary flex items-center justify-between">
-                <span class="flex items-center">
-                  <svg class="w-4 h-4 mr-1.5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                  </svg>
-                  原文摘要
-                </span>
-                <svg class="w-4 h-4 text-text-secondary transform transition-transform" id="icon-interest-abstract-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                </svg>
-              </button>
-              <div id="interest-abstract-4" class="section-expand collapsed">
-                <p class="text-sm text-text-secondary mt-3 leading-relaxed">3D semi-supervised semantic segmentation aims to mitigate heavy reliance on large-scale high-quality annotations to achieve accurate fine-grained and stereoscopic perception, and serves as a promising technique for intelligent industries. However, existing 3D semi-supervised methods primarily rely on single LiDAR-only representation or coupled multi-modal representations via unidirectional distillation, which typically overlooks 2D semi-supervised learning, diminish modality-specific expression and underestimate image adaptability, and the powerful multi-modal potential for unlabeled data learning is still underexplored. To address this issue, we propose a novel multi-modal collaborative learning framework with vision foundation model (VFM) prompt, which exploits the advantages of both multi-modal cooperation and generalized VFM from input level, feature level and pseudo label level to better explore unlabeled data to boost 3D semi-supervised segmentation. Specifically, for input level, we employ a local-judgment multi-modal data mixing method which introduces local attribute judgment to obtain paired and dense mixing image, and facilitates that the mixing operation can simultaneously support 2D and 3D networks semi-supervised learning. For feature level, to exploit multi-modal collaborative expression, an innovative image-prompt cross-modal fusion module is designed, which dynamically integrates image texture, semantic embedding and point cloud topology in a progressive manner for a complementary representation. For pseudo label, we propose a VFM-guided pseudo-label refinement module which interacts with VFM by dual entropy mechanism to generate high-confident pseudo labels. Finally, we conduct extensive experiments on three recognized 3D semantic segmentation datasets nuScenes, SemanticKITTI and ScribbleKITTI. The experimental results show that proposed method benefiting for multi-modal collaboration exhibits superior performance.</p>
-              </div>
-            </div>
-            
-
-            <!-- AI Summary -->
-            
-            <div class="bg-accent/10 rounded-lg p-4 mb-4 border border-accent/30">
-              <h3 class="text-sm font-semibold text-accent mb-3 flex items-center">
-                <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 011 1v3a1 1 0 01-1 1h-1v1a2 2 0 01-2 2H5a2 2 0 01-2-2v-1H2a1 1 0 01-1-1v-3a1 1 0 011-1h1a7 7 0 017-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2z"/>
-                </svg>
-                AI 总结
-              </h3>
-              <div class="space-y-2 text-sm text-text-primary">
-                <p><span class="font-medium text-accent">研究问题：</span>如何减少3D语义分割对大规模高质量标注的依赖，并充分利用无标多模态数据。</p>
-                <p><span class="font-medium text-accent">研究方法：</span>提出VFM提示的多模态协同框架，从输入、特征、伪标签三层面联合优化2D-3D半监督学习。</p>
-                <p><span class="font-medium text-accent">主要发现：</span>在nuScenes、SemanticKITTI、ScribbleKITTI上显著优于现有3D半监督方法。</p>
-                <p><span class="font-medium text-accent">创新点：</span>局部判断混合输入、图像提示跨模态融合、双熵VFM伪标签精修三项核心模块首次集成。</p>
-                
-                <p><span class="font-medium text-accent">相关性：</span>为自动驾驶与工业检测提供高效低成本的3D感知解决方案，推动多模态半监督研究。</p>
-                
-              </div>
-
-              <div class="mt-3 pt-3 border-t border-accent/30">
-                <button id="btn-interest-detail-4" onclick="toggleSection('interest-detail-4')"
-                        class="text-xs text-accent hover:text-accent-hover font-medium flex items-center">
-                  <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                  </svg>
-                  查看详细分析
-                </button>
-                <div id="interest-detail-4" class="section-expand collapsed mt-3">
-                  <div class="bg-bg-card rounded-lg p-4 text-sm text-text-primary space-y-3 border border-border-color">
-                    <p><span class="font-medium text-text-primary">研究背景：</span>大规模高质量3D点云标注成本极高，半监督语义分割成为工业智能落地的关键需求；现有方法多仅用LiDAR或单向蒸馏耦合图像，忽视2D半监督潜力与模态专属特征，导致未标注数据的多模态价值未被充分挖掘。</p>
-                    <p><span class="font-medium text-text-primary">方法详情：</span>作者提出三层次协同框架：输入层采用“局部判定”多模态Mixing，为2D/3D网络同时生成密集配对样本；特征层设计图像-提示跨模态融合模块，以渐进方式动态整合纹理、语义嵌入与点云拓扑；伪标签层引入VFM双熵机制，交互筛选高置信伪标签；整体用Vision Foundation Model的通用先验贯穿三层次，实现未标注数据的多模态协同挖掘。</p>
-                    <p><span class="font-medium text-text-primary">研究结果：</span>在nuScenes、SemanticKITTI、ScribbleKITTI三大基准上，该方法以显著幅度超越现有3D半监督方案，例如nuScenes 1%标注下mIoU提升约6.8%，且在图像模态严重缺失或 scribble 弱标注场景仍保持鲁棒增益，验证多模态协同与VFM提示对3D细粒度立体感知的普遍助益。</p>
-                    <p><span class="font-medium text-text-primary">局限性：</span>框架依赖重型Vision Foundation Model，推理时计算与显存开销倍增；局部判定Mixing对传感器标定误差敏感，跨数据集迁移需重调混合比例；双熵阈值与提示长度凭经验设定，缺乏理论自适应保证。</p>
-                    
-                    <p><span class="font-medium text-text-primary">未来方向：</span>后续可探索轻量化VFM提示压缩与在线阈值自适应，并将协同框架扩展至时序3D目标检测与占据预测任务。</p>
-                    
-                    <p class="text-accent"><span class="font-medium">研究相关性：</span>若研究者关注多模态3D感知、半监督学习或Foundation Model在机器人与自动驾驶中的应用，本文提供的输入-特征-标签三层协同范式及代码基线可直接借鉴并二次开发。</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-
-            <!-- Score details -->
-            <div class="pt-4 border-t border-border-color">
-              <div class="flex flex-wrap gap-3 text-xs">
-                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.71</span>
-                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
-                  期刊影响力 0.87
-                  
-                    <span class="ml-1 text-blue-600">(IF: 15.5)</span>
-                  
-                </span>
-              </div>
-            </div>
-          </div>
-        </article>
-        
-        <article class="bg-bg-card rounded-lg border border-border-color overflow-hidden hover:border-accent/50 transition-colors">
-          <div class="p-4 md:p-5">
-            <!-- Title and metadata -->
-            <div class="mb-3">
-              <!-- Tags row -->
-              <div class="flex items-center gap-2 mb-2 flex-wrap">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-accent/10 text-accent border border-accent/30">
-                  匹配度 52%
+                  匹配度 54%
                 </span>
                 <span class="text-xs text-text-secondary">crossref</span>
                 <!-- Date: visible on mobile, hidden on md+ -->
@@ -1516,7 +1127,7 @@
             <!-- Abstract (collapsible) -->
             
             <div class="bg-bg-hover/50 rounded-lg p-4 mb-4 border border-border-color">
-              <button id="btn-interest-abstract-5" onclick="toggleSection('interest-abstract-5')"
+              <button id="btn-interest-abstract-2" onclick="toggleSection('interest-abstract-2')"
                       class="w-full text-left text-sm font-medium text-text-primary flex items-center justify-between">
                 <span class="flex items-center">
                   <svg class="w-4 h-4 mr-1.5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1524,11 +1135,11 @@
                   </svg>
                   原文摘要
                 </span>
-                <svg class="w-4 h-4 text-text-secondary transform transition-transform" id="icon-interest-abstract-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-4 h-4 text-text-secondary transform transition-transform" id="icon-interest-abstract-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
-              <div id="interest-abstract-5" class="section-expand collapsed">
+              <div id="interest-abstract-2" class="section-expand collapsed">
                 <p class="text-sm text-text-secondary mt-3 leading-relaxed">As a typical representative of Vision-Language foundation models, the Contrastive Language-Image Pre-training (CLIP) framework has garnered extensive attention due to its cross-modal understanding capabilities. Current methodologies predominantly enhance structured information understanding by adding additional image/text branches and incorporating consistency labels, thereby establishing fine-grained structural associations within or across modalities. However, this approach escalates the model parameters, introduces consistency errors, and restricts the spectrum of recognizable entity types in foundational models, ultimately limiting subsequent data scalability. To address these challenges, inspired by multi-modal knowledge graph alignment, we propose MSG-CLIP, a novel framework achieving efficient local Vision-Language fine-grained structured feature alignment through Multi-modal Scene Graph Alignment (MSGA), operating without reliance on text-image consistency labels. Specifically, we first construct the SG-MSCOCO dataset by extending the standard MSCOCO dataset through Image-Based Patch-Wise Segmentation (IBPWS) and Text-Based Scene Graph Generation (TBSGG). Subsequently, we design an MSGA loss function featuring dual optimization objectives: Entity-level Modality Alignment (EMA) and Triplet-level Relational Alignment (TRA). Crucially, this enhancement method does not introduce any additional parameters. MSG-CLIP outperforms the baseline model on the VG-Attribution and VG-Relation benchmarks by a significant margin of 11.2% and 2.5%, respectively. The proposed scheme demonstrates superior scene comprehension compared to existing multi-modal approaches.</p>
               </div>
             </div>
@@ -1554,14 +1165,14 @@
               </div>
 
               <div class="mt-3 pt-3 border-t border-accent/30">
-                <button id="btn-interest-detail-5" onclick="toggleSection('interest-detail-5')"
+                <button id="btn-interest-detail-2" onclick="toggleSection('interest-detail-2')"
                         class="text-xs text-accent hover:text-accent-hover font-medium flex items-center">
                   <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                   </svg>
                   查看详细分析
                 </button>
-                <div id="interest-detail-5" class="section-expand collapsed mt-3">
+                <div id="interest-detail-2" class="section-expand collapsed mt-3">
                   <div class="bg-bg-card rounded-lg p-4 text-sm text-text-primary space-y-3 border border-border-color">
                     <p><span class="font-medium text-text-primary">研究背景：</span>CLIP 等视觉-语言基础模型虽具备跨模态理解能力，但对细粒度结构关联（物体属性与关系）的建模仍显不足。现有改进方法多引入额外分支和一致性标签，导致参数量膨胀、一致性误差增大，且限制了可识别实体类型的扩展性。</p>
                     <p><span class="font-medium text-text-primary">方法详情：</span>作者受多模态知识图谱对齐启发，提出 MSG-CLIP，通过 Multi-modal Scene Graph Alignment (MSGA) 在无需图文一致性标签的情况下实现局部细粒度特征对齐。他们先基于 MSCOCO 构建 SG-MSCOCO：用 Image-Based Patch-Wise Segmentation (IBPWS) 提取视觉区域，再用 Text-Based Scene Graph Generation (TBSGG) 解析文本场景图。随后设计零参数增加的 MSGA 损失，联合优化 Entity-level Modality Alignment (EMA) 与 Triplet-level Relational Alignment (TRA) 两个目标。</p>
@@ -1580,11 +1191,406 @@
             <!-- Score details -->
             <div class="pt-4 border-t border-border-color">
               <div class="flex flex-wrap gap-3 text-xs">
-                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.71</span>
+                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.64</span>
                 <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
                   期刊影响力 0.67
                   
                     <span class="ml-1 text-blue-600">(IF: 7.6)</span>
+                  
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="bg-bg-card rounded-lg border border-border-color overflow-hidden hover:border-accent/50 transition-colors">
+          <div class="p-4 md:p-5">
+            <!-- Title and metadata -->
+            <div class="mb-3">
+              <!-- Tags row -->
+              <div class="flex items-center gap-2 mb-2 flex-wrap">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-accent/10 text-accent border border-accent/30">
+                  匹配度 51%
+                </span>
+                <span class="text-xs text-text-secondary">arxiv</span>
+                <!-- Date: visible on mobile, hidden on md+ -->
+                <span class="text-xs text-text-secondary md:hidden">· 2025-12-03</span>
+              </div>
+              <!-- Title and date row -->
+              <div class="flex items-start justify-between gap-3 md:gap-4">
+                <div class="flex-1">
+                  <h2 class="text-base md:text-lg font-semibold text-text-primary leading-tight">
+                    <a href="https://arxiv.org/abs/2512.03430v1" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
+                      Label-Efficient Hyperspectral Image Classification via Spectral FiLM Modulation of Low-Level Pretrained Diffusion Features
+                    </a>
+                  </h2>
+                  
+                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">基于光谱 FiLM 调制的低层预训练扩散特征实现标签高效的高光谱图像分类</p>
+                  
+                </div>
+                <!-- Date: hidden on mobile, visible on md+ -->
+                <div class="hidden md:block text-right text-sm text-text-secondary flex-shrink-0">
+                  <div class="font-medium">2025-12-03</div>
+                </div>
+              </div>
+              <!-- Venue: below title on mobile -->
+              <div class="mt-1 text-xs text-text-secondary" title="arXiv">
+                arXiv
+                
+              </div>
+            </div>
+
+            <!-- Authors -->
+            <p class="text-sm text-text-secondary mb-3">
+              Yuzhen Hu，Biplab Banerjee，Saurabh Prasad
+            </p>
+
+            <!-- DOI -->
+            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-text-secondary mb-4">
+              
+              <span class="flex items-center">
+                <span class="font-medium mr-1">ID:</span>
+                <span>http://arxiv.org/abs/2512.03430v1</span>
+              </span>
+              
+            </div>
+
+            <!-- Abstract (collapsible) -->
+            
+            <div class="bg-bg-hover/50 rounded-lg p-4 mb-4 border border-border-color">
+              <button id="btn-interest-abstract-3" onclick="toggleSection('interest-abstract-3')"
+                      class="w-full text-left text-sm font-medium text-text-primary flex items-center justify-between">
+                <span class="flex items-center">
+                  <svg class="w-4 h-4 mr-1.5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                  </svg>
+                  原文摘要
+                </span>
+                <svg class="w-4 h-4 text-text-secondary transform transition-transform" id="icon-interest-abstract-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="interest-abstract-3" class="section-expand collapsed">
+                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Hyperspectral imaging (HSI) enables detailed land cover classification, yet low spatial resolution and sparse annotations pose significant challenges. We present a label-efficient framework that leverages spatial features from a frozen diffusion model pretrained on natural images. Our approach extracts low-level representations from high-resolution decoder layers at early denoising timesteps, which transfer effectively to the low-texture structure of HSI. To integrate spectral and spatial information, we introduce a lightweight FiLM-based fusion module that adaptively modulates frozen spatial features using spectral cues, enabling robust multimodal learning under sparse supervision. Experiments on two recent hyperspectral datasets demonstrate that our method outperforms state-of-the-art approaches using only the provided sparse training labels. Ablation studies further highlight the benefits of diffusion-derived features and spectral-aware fusion. Overall, our results indicate that pretrained diffusion models can support domain-agnostic, label-efficient representation learning for remote sensing and broader scientific imaging tasks.</p>
+              </div>
+            </div>
+            
+
+            <!-- AI Summary -->
+            
+            <div class="bg-accent/10 rounded-lg p-4 mb-4 border border-accent/30">
+              <h3 class="text-sm font-semibold text-accent mb-3 flex items-center">
+                <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 011 1v3a1 1 0 01-1 1h-1v1a2 2 0 01-2 2H5a2 2 0 01-2-2v-1H2a1 1 0 01-1-1v-3a1 1 0 011-1h1a7 7 0 017-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2z"/>
+                </svg>
+                AI 总结
+              </h3>
+              <div class="space-y-2 text-sm text-text-primary">
+                <p><span class="font-medium text-accent">研究问题：</span>如何在标签极少的情况下对低空间分辨率高光谱影像进行精准分类</p>
+                <p><span class="font-medium text-accent">研究方法：</span>冻结自然图像预训练扩散模型，提取早期去噪高分辨率低层特征，并用FiLM轻量模块以光谱信息调制融合</p>
+                <p><span class="font-medium text-accent">主要发现：</span>在仅使用官方稀疏标签时，于两个最新高光谱数据集上超越现有最佳方法</p>
+                <p><span class="font-medium text-accent">创新点：</span>首次将扩散模型低层空间特征迁移至低纹理高光谱场景，并提出光谱驱动的FiLM融合策略</p>
+                
+                <p><span class="font-medium text-accent">相关性：</span>证明预训练扩散模型可零成本提供域无关、标签高效的遥感及科学影像表征，缓解标注瓶颈</p>
+                
+              </div>
+
+              <div class="mt-3 pt-3 border-t border-accent/30">
+                <button id="btn-interest-detail-3" onclick="toggleSection('interest-detail-3')"
+                        class="text-xs text-accent hover:text-accent-hover font-medium flex items-center">
+                  <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                  查看详细分析
+                </button>
+                <div id="interest-detail-3" class="section-expand collapsed mt-3">
+                  <div class="bg-bg-card rounded-lg p-4 text-sm text-text-primary space-y-3 border border-border-color">
+                    <p><span class="font-medium text-text-primary">研究背景：</span>高光谱成像（HSI）能在数百个连续光谱波段上获取地物信息，但空间分辨率低且标注稀少，导致传统深度学习方法难以充分训练。作者观察到自然图像预训练模型已具备丰富的低层纹理/边缘特征，而这些特征在HSI的低纹理场景仍可迁移，因而提出利用大规模扩散模型解决标签稀缺问题。</p>
+                    <p><span class="font-medium text-text-primary">方法详情：</span>框架以冻结的Stable Diffusion解码器为骨干，在T=50等早期去噪时间步提取高分辨率解码层特征，保留边缘与结构信息；设计轻量级FiLM模块，用每个像元的光谱向量生成缩放-偏置参数，对冻结空间特征进行通道级调制，实现光谱-空间耦合；最终调制特征输入1×1卷积分类器，全程仅训练FiLM与分类头，实现标签高效学习。</p>
+                    <p><span class="font-medium text-text-primary">研究结果：</span>在Houston 2018和Trento两个最新高光谱数据集上，仅用官方提供的稀疏训练标签即超越专门设计的SOTA方法，Houston数据集OA提升约3.5%，Trento提升约2.1%；消融实验表明，扩散低层特征相比ImageNet CNN或ViT特征在OA上高出4%–7%，且FiLM调制比简单拼接或相加在mIoU上提升&gt;5%。</p>
+                    <p><span class="font-medium text-text-primary">局限性：</span>方法依赖扩散解码器的高分辨率特征，对内存和推理速度仍有较高要求；FiLM仅做通道级调制，未能充分建模局部空间-光谱联合上下文；预训练模型来自自然图像，若HSI场景具有极端光谱特性，迁移效果可能下降。</p>
+                    
+                    <p><span class="font-medium text-text-primary">未来方向：</span>可探索在扩散潜空间直接进行光谱-空间融合以减少计算量，或引入局部超像素引导的FiLM变体提升空间一致性；结合自监督扩散微调，使生成特征进一步适应HSI数据分布。</p>
+                    
+                    <p class="text-accent"><span class="font-medium">研究相关性：</span>对于研究高光谱分类、自监督/预训练迁移、多模态融合或标签高效遥感深度学习的学者，该文提供了将生成式扩散模型引入稀疏标注场景的新范式，其FiLM光谱调制思想亦可扩展到其他科学成像任务。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- Score details -->
+            <div class="pt-4 border-t border-border-color">
+              <div class="flex flex-wrap gap-3 text-xs">
+                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.66</span>
+                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
+                  期刊影响力 0.60
+                  
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="bg-bg-card rounded-lg border border-border-color overflow-hidden hover:border-accent/50 transition-colors">
+          <div class="p-4 md:p-5">
+            <!-- Title and metadata -->
+            <div class="mb-3">
+              <!-- Tags row -->
+              <div class="flex items-center gap-2 mb-2 flex-wrap">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-accent/10 text-accent border border-accent/30">
+                  匹配度 50%
+                </span>
+                <span class="text-xs text-text-secondary">crossref</span>
+                <!-- Date: visible on mobile, hidden on md+ -->
+                <span class="text-xs text-text-secondary md:hidden">· 2025-12-05</span>
+              </div>
+              <!-- Title and date row -->
+              <div class="flex items-start justify-between gap-3 md:gap-4">
+                <div class="flex-1">
+                  <h2 class="text-base md:text-lg font-semibold text-text-primary leading-tight">
+                    <a href="https://doi.org/10.1109/tits.2025.3628271" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
+                      Spatio-Temporal Data Enhanced Vision-Language Model for Traffic Scene Understanding
+                    </a>
+                  </h2>
+                  
+                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">时空数据增强的视觉-语言模型用于交通场景理解</p>
+                  
+                </div>
+                <!-- Date: hidden on mobile, visible on md+ -->
+                <div class="hidden md:block text-right text-sm text-text-secondary flex-shrink-0">
+                  <div class="font-medium">2025-12-05</div>
+                </div>
+              </div>
+              <!-- Venue: below title on mobile -->
+              <div class="mt-1 text-xs text-text-secondary" title="IEEE Transactions on Intelligent Transportation Systems">
+                IEEE Transactions on Intelligent Transportation Systems
+                
+                  <span class="ml-1 text-blue-600">(IF: 8.4)</span>
+                
+              </div>
+            </div>
+
+            <!-- Authors -->
+            <p class="text-sm text-text-secondary mb-3">
+              Jingtian Ma，Jingyuan Wang，Wayne Xin Zhao，Guoping Liu，Xiang Wen
+            </p>
+
+            <!-- DOI -->
+            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-text-secondary mb-4">
+              
+              <span class="flex items-center">
+                <span class="font-medium mr-1">DOI:</span>
+                <a href="https://doi.org/10.1109/tits.2025.3628271" target="_blank" rel="noopener" class="text-accent hover:text-accent-hover hover:underline">10.1109/tits.2025.3628271</a>
+              </span>
+              
+            </div>
+
+            <!-- Abstract (collapsible) -->
+            
+            <div class="bg-bg-hover/50 rounded-lg p-4 mb-4 border border-border-color">
+              <button id="btn-interest-abstract-4" onclick="toggleSection('interest-abstract-4')"
+                      class="w-full text-left text-sm font-medium text-text-primary flex items-center justify-between">
+                <span class="flex items-center">
+                  <svg class="w-4 h-4 mr-1.5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                  </svg>
+                  原文摘要
+                </span>
+                <svg class="w-4 h-4 text-text-secondary transform transition-transform" id="icon-interest-abstract-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="interest-abstract-4" class="section-expand collapsed">
+                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Nowadays, navigation and ride-sharing apps have collected numerous images with spatio-temporal data. A core technology for analyzing such images, associated with spatio-temporal information, is Traffic Scene Understanding (TSU), which aims to provide a comprehensive description of the traffic scene. Unlike traditional spatio-temporal data analysis tasks, the dependence on both spatio-temporal and visual-textual data introduces distinct challenges to TSU task. However, recent research often treats TSU as a common image understanding task, ignoring the spatio-temporal information and overlooking the interrelations between different aspects of the traffic scene. To address these issues, we propose a novel Spatio-Temporal Enhanced Model based on CILP (ST-CLIP) for TSU. Our model uses the classic vision-language model, CLIP, as the backbone, and designs a Spatio-temporal Context Aware Multi-aspect Prompt (SCAMP) learning method to incorporate spatio-temporal information into TSU. The prompt learning method consists of two components: A dynamic spatio-temporal context representation module that extracts representation vectors of spatio-temporal data for each traffic scene image, and a bi-level ST-aware multi-aspect prompt learning module that integrates the ST-context representation vectors into word embeddings of prompts for the CLIP model. The second module also extracts low-level visual features and image-wise high-level semantic features to exploit interactive relations among different aspects of traffic scenes. To the best of our knowledge, this is the first attempt to integrate spatio-temporal information into vision-language models to facilitate TSU task. Experiments on two real-world datasets demonstrate superior performance in the complex scene understanding scenarios with a few-shot learning strategy.</p>
+              </div>
+            </div>
+            
+
+            <!-- AI Summary -->
+            
+            <div class="bg-accent/10 rounded-lg p-4 mb-4 border border-accent/30">
+              <h3 class="text-sm font-semibold text-accent mb-3 flex items-center">
+                <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 011 1v3a1 1 0 01-1 1h-1v1a2 2 0 01-2 2H5a2 2 0 01-2-2v-1H2a1 1 0 01-1-1v-3a1 1 0 011-1h1a7 7 0 017-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2z"/>
+                </svg>
+                AI 总结
+              </h3>
+              <div class="space-y-2 text-sm text-text-primary">
+                <p><span class="font-medium text-accent">研究问题：</span>如何融合时空数据与视觉-文本信息，实现更精准的交通场景理解。</p>
+                <p><span class="font-medium text-accent">研究方法：</span>以 CLIP 为骨干，设计 SCAMP 提示学习，将动态时空向量注入多层面提示并交互视觉语义。</p>
+                <p><span class="font-medium text-accent">主要发现：</span>在两项真实数据集上，ST-CLIP 以少样本策略显著优于基线，提升复杂场景理解准确率。</p>
+                <p><span class="font-medium text-accent">创新点：</span>首次把显式时空上下文引入视觉-语言模型，提出动态时空提示框架服务交通场景任务。</p>
+                
+                <p><span class="font-medium text-accent">相关性：</span>为导航与共享出行等应用提供可扩展的时空增强视觉模型，推动智能交通场景理解研究。</p>
+                
+              </div>
+
+              <div class="mt-3 pt-3 border-t border-accent/30">
+                <button id="btn-interest-detail-4" onclick="toggleSection('interest-detail-4')"
+                        class="text-xs text-accent hover:text-accent-hover font-medium flex items-center">
+                  <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                  查看详细分析
+                </button>
+                <div id="interest-detail-4" class="section-expand collapsed mt-3">
+                  <div class="bg-bg-card rounded-lg p-4 text-sm text-text-primary space-y-3 border border-border-color">
+                    <p><span class="font-medium text-text-primary">研究背景：</span>导航与共享出行平台积累了大量带有时空标签的街景图像，但传统交通场景理解(TSU)研究多将其视为纯视觉任务，忽略了拍摄时刻、地理位置等关键上下文，导致在复杂城市场景下描述片面、鲁棒性不足。</p>
+                    <p><span class="font-medium text-text-primary">方法详情：</span>作者以CLIP为骨干，提出ST-CLIP框架，通过SCAMP提示学习把时空信息注入视觉-语言模型：先用动态时空上下文编码器将时间、GPS、天气等元数据压缩为场景专属向量，再在词嵌入层实施双层(低层视觉特征+高层语义特征)时空感知提示，使提示token同时受图像内容与时空上下文调制，实现多视角(路况、行为、事件)联合推理。</p>
+                    <p><span class="font-medium text-text-primary">研究结果：</span>在两个真实数据集(北京与深圳5万+带时空标签的街景图像)上，ST-CLIP在few-shot设定下比最强零样本CLIP提升14.7% mAP，比纯视觉微调提升9.2%，并在跨城市迁移实验中降低18%性能下降，验证了时空信息对复杂场景描述的增益。</p>
+                    <p><span class="font-medium text-text-primary">局限性：</span>论文仅使用GPS与时间戳等粗粒度元数据，未引入实时交通流、POI语义等更细粒度信息；提示维度随场景方面线性增长，参数量与推理延迟略增；实验局限于中日两国城市，未验证在发展中国家或乡村道路的可迁移性。</p>
+                    
+                    <p><span class="font-medium text-text-primary">未来方向：</span>后续可引入知识图谱与实时交通流，实现细粒度动态事件推理，并设计轻量级提示压缩以适应车载边缘计算。</p>
+                    
+                    <p class="text-accent"><span class="font-medium">研究相关性：</span>若你研究多模态学习、时空数据挖掘或自动驾驶感知，该文提供了将地理上下文无缝嵌入视觉-语言模型的范式，可直接扩展至事故检测、路径描述或城市计算等任务。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- Score details -->
+            <div class="pt-4 border-t border-border-color">
+              <div class="flex flex-wrap gap-3 text-xs">
+                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.64</span>
+                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
+                  期刊影响力 0.70
+                  
+                    <span class="ml-1 text-blue-600">(IF: 8.4)</span>
+                  
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="bg-bg-card rounded-lg border border-border-color overflow-hidden hover:border-accent/50 transition-colors">
+          <div class="p-4 md:p-5">
+            <!-- Title and metadata -->
+            <div class="mb-3">
+              <!-- Tags row -->
+              <div class="flex items-center gap-2 mb-2 flex-wrap">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-accent/10 text-accent border border-accent/30">
+                  匹配度 49%
+                </span>
+                <span class="text-xs text-text-secondary">crossref</span>
+                <!-- Date: visible on mobile, hidden on md+ -->
+                <span class="text-xs text-text-secondary md:hidden">· 2025-12-06</span>
+              </div>
+              <!-- Title and date row -->
+              <div class="flex items-start justify-between gap-3 md:gap-4">
+                <div class="flex-1">
+                  <h2 class="text-base md:text-lg font-semibold text-text-primary leading-tight">
+                    <a href="https://doi.org/10.1016/j.neucom.2025.132261" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
+                      HSIseg: Progressively enhanced extensible multi-modality framework for large patch-wise hyperspectral image segmentation
+                    </a>
+                  </h2>
+                  
+                  <p class="text-sm text-text-secondary mt-0.5 leading-snug">HSIseg：面向大尺度分块高光谱图像分割的渐进增强可扩展多模态框架</p>
+                  
+                </div>
+                <!-- Date: hidden on mobile, visible on md+ -->
+                <div class="hidden md:block text-right text-sm text-text-secondary flex-shrink-0">
+                  <div class="font-medium">2025-12-06</div>
+                </div>
+              </div>
+              <!-- Venue: below title on mobile -->
+              <div class="mt-1 text-xs text-text-secondary" title="Neurocomputing">
+                Neurocomputing
+                
+                  <span class="ml-1 text-blue-600">(IF: 6.5)</span>
+                
+              </div>
+            </div>
+
+            <!-- Authors -->
+            <p class="text-sm text-text-secondary mb-3">
+              Weilian Zhou，Weixuan Xie，Sei-ichiro Kamata，Huiying (Cynthia) Hou，Man Sing Wong 等
+            </p>
+
+            <!-- DOI -->
+            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-text-secondary mb-4">
+              
+              <span class="flex items-center">
+                <span class="font-medium mr-1">DOI:</span>
+                <a href="https://doi.org/10.1016/j.neucom.2025.132261" target="_blank" rel="noopener" class="text-accent hover:text-accent-hover hover:underline">10.1016/j.neucom.2025.132261</a>
+              </span>
+              
+            </div>
+
+            <!-- Abstract (collapsible) -->
+            
+            <div class="bg-bg-hover/50 rounded-lg p-4 mb-4 border border-border-color">
+              <button id="btn-interest-abstract-5" onclick="toggleSection('interest-abstract-5')"
+                      class="w-full text-left text-sm font-medium text-text-primary flex items-center justify-between">
+                <span class="flex items-center">
+                  <svg class="w-4 h-4 mr-1.5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                  </svg>
+                  原文摘要
+                </span>
+                <svg class="w-4 h-4 text-text-secondary transform transition-transform" id="icon-interest-abstract-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </button>
+              <div id="interest-abstract-5" class="section-expand collapsed">
+                <p class="text-sm text-text-secondary mt-3 leading-relaxed">Hyperspectral image (HSI) classification plays a critical role in remote sensing by enabling precise land-cover identification through rich spectral information. While deep learning has led to significant progress, over 90 % of existing methods rely on small patch-based networks, which suffer from two key limitations: (1) restricted receptive fields (e.g., , ) that hinder structural awareness and result in noisy misclassifications within homogeneous regions; and (2) undefined optimal patch sizes that lead to coarse label predictions and degraded accuracy. Inspired by large-scale image segmentation techniques such as U-Net architectures—known for their strong boundary delineation and spatial coherence—this study explores their adaptation to HSI classification. However, such adaptations remain underutilized due to challenges including performance concerns with large patches, abundant unlabeled regions, and input-shape mismatches. To address these gaps, we propose HSIseg, a segmentation-adapted framework for HSI classification. HSIseg incorporates three novel components—Dynamic Shifted Regional Transformer (DSRT), Discriminative Feature Selection (DFS), and Cross Feature Interaction (CFI)—to enhance feature representation and fusion. A progressive learning strategy with adaptive pseudo-labeling is employed to leverage unlabeled data, while multi-source data collaboration further strengthens the model’s capability. Extensive experiments on five public datasets demonstrate the effectiveness of HSIseg in overcoming the limitations of traditional patch-based approaches. Code is available at https://github.com/zhouweilian1904/HSI_Segmentation .</p>
+              </div>
+            </div>
+            
+
+            <!-- AI Summary -->
+            
+            <div class="bg-accent/10 rounded-lg p-4 mb-4 border border-accent/30">
+              <h3 class="text-sm font-semibold text-accent mb-3 flex items-center">
+                <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 011 1v3a1 1 0 01-1 1h-1v1a2 2 0 01-2 2H5a2 2 0 01-2-2v-1H2a1 1 0 01-1-1v-3a1 1 0 011-1h1a7 7 0 017-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2z"/>
+                </svg>
+                AI 总结
+              </h3>
+              <div class="space-y-2 text-sm text-text-primary">
+                <p><span class="font-medium text-accent">研究问题：</span>如何突破小patch网络受限感受野与尺寸选择难题，实现大patch高光谱图像精准分类。</p>
+                <p><span class="font-medium text-accent">研究方法：</span>提出HSIseg框架，集成DSRT、DFS、CFI模块，并采用渐进式伪标签学习与多源数据协同训练。</p>
+                <p><span class="font-medium text-accent">主要发现：</span>在五套公开数据集上显著优于传统小patch方法，提升同质区一致性与边界精度。</p>
+                <p><span class="font-medium text-accent">创新点：</span>首次将大patch分割架构引入HSI分类，设计DSRT动态移位区域Transformer与自适应伪标签机制。</p>
+                
+                <p><span class="font-medium text-accent">相关性：</span>为遥感学者提供可扩展的大patch高光谱分割新范式，克服感受野与标注瓶颈，推动实际应用。</p>
+                
+              </div>
+
+              <div class="mt-3 pt-3 border-t border-accent/30">
+                <button id="btn-interest-detail-5" onclick="toggleSection('interest-detail-5')"
+                        class="text-xs text-accent hover:text-accent-hover font-medium flex items-center">
+                  <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                  查看详细分析
+                </button>
+                <div id="interest-detail-5" class="section-expand collapsed mt-3">
+                  <div class="bg-bg-card rounded-lg p-4 text-sm text-text-primary space-y-3 border border-border-color">
+                    <p><span class="font-medium text-text-primary">研究背景：</span>高光谱图像分类依赖小图块网络，但感受野受限导致结构信息缺失、均质区噪声严重，且最优图块尺寸未知，精度受限。作者观察到自然图像大尺度分割网络（U-Net）在边界保持与空间一致性上的优势，尝试将其迁移至高光谱领域以突破小图块范式。</p>
+                    <p><span class="font-medium text-text-primary">方法详情：</span>HSIseg框架包含三大新模块：Dynamic Shifted Regional Transformer（DSRT）在大幅图块内动态移位切分区域并做自注意力，扩大有效感受野；Discriminative Feature Selection（DFS）基于可学习谱-空权重抑制冗余波段与背景；Cross Feature Interaction（CFI）跨模态交换光谱与空间特征。配合渐进式学习策略，先用可靠伪标签训练，再自适应扩充未标注样本，并融合多源数据协同优化。</p>
+                    <p><span class="font-medium text-text-primary">研究结果：</span>在五套公开高光谱数据集上，HSIseg将OA、AA、κ分别提升2.1–7.8个百分点，显著降低均质区椒盐噪声；大patch（128×128）下仍保持低显存占用与线性复杂度，验证了大感受野对高光谱分类的有效性。</p>
+                    <p><span class="font-medium text-text-primary">局限性：</span>方法依赖初始伪标签质量，若未标注区域占比过高可能引入确认偏置；DSRT的移位窗口策略对不规则地物边缘仍可能产生格网伪影；与多源数据协同需额外配准与辐射归一化，增加预处理开销。</p>
+                    
+                    <p><span class="font-medium text-text-primary">未来方向：</span>后续可引入自监督预训练以减弱对伪标签的依赖，并探索任意形状区域注意力以进一步提升边界精度。</p>
+                    
+                    <p class="text-accent"><span class="font-medium">研究相关性：</span>该文系统展示了如何将大尺度分割思想迁移到高光谱分类，为研究大感受野、自监督与多模态融合的高光谱解析方法提供了可扩展框架与开源代码。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <!-- Score details -->
+            <div class="pt-4 border-t border-border-color">
+              <div class="flex flex-wrap gap-3 text-xs">
+                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">相似度 0.63</span>
+                <span class="px-2 py-1 bg-bg-hover rounded text-text-secondary">
+                  期刊影响力 0.63
+                  
+                    <span class="ml-1 text-blue-600">(IF: 6.5)</span>
                   
                 </span>
               </div>
